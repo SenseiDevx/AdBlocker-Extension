@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Youtube Ad Blocker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/popup.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="title">
+        <h1>
+            YouTube Ad Blocker
+        </h1>
+
+        <label
+                id="isExtensionEnabledLbl"
+                for="isExtensionEnabledCb"
+        >
+            <input
+                    type="checkbox"
+                    id="isExtensionEnabledCb"
+                    checked
+            />
+            <div class="toggle-bg"></div>
+        </label>
+    </div>
+
+    <div class="videos-or-minutes">
+        <p id="videos" class="selected">
+            <span>V</span>ideos
+        </p>
+
+        <p id="minutes">
+            <span>M</span>inutes
+        </p>
+    </div>
+
+    <div class="count">
+        <p>
+            <span id="total-count">0</span>
+        </p>
+        <p class="desc" id="total-count-desc">
+            Videos Skipped
+        </p>
+    </div>
+
+    <div class="stats-container">
+        <div class="stats-el">
+            <img src="../assets/youtube-alt-logo.png" draggable="false" alt="Youtube Alternative Logo"/>
+
+            <p class="desc">
+                <span id="today-count">0</span>
+                <span class="count-type">videos</span><br/>today
+            </p>
+        </div>
+
+        <div class="stats-el">
+            <img src="../assets/youtube-alt-logo.png" draggable="false" alt="Youtube Alternative Logo"/>
+
+            <p class="desc">
+                <span id="this-week-count">0</span>
+                <span class="count-type">videos</span><br/>this week
+            </p>
+        </div>
+
+        <div class="stats-el">
+            <img src="../assets/youtube-alt-logo.png" draggable="false" alt="Youtube Alternative Logo"/>
+
+            <p class="desc">
+                <span id="this-month-count">0</span>
+                <span class="count-type">videos</span><br/>this month
+            </p>
+        </div>
+    </div>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>

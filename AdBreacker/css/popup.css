@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 14px;
+  width: 300px;
+  min-height: 180px;
+  -webkit-transition: color 200ms, background-color 300ms;
+  transition: color 200ms, background-color 300ms;
+  background-color: #e5e7eb;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+:root {
+  --white-color: #ffffff;
+  --text-color: #3f3f3f;
+  --gray-color: #9a9a9a;
+}
+
+.container {
+  background-color: var(--white-color);
+  padding: 20px 15px;
+}
+.container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: var(--text-color);
+}
+.container .videos-or-minutes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  margin: 15px;
+}
+.container .videos-or-minutes .selected span {
+  padding-bottom: 0.05rem;
+  border-bottom: 0.15rem solid #9a9a9a;
+}
+.container .videos-or-minutes > :not(.selected) {
+  font-weight: 300;
+  color: #9a9a9a;
+  cursor: pointer;
+}
+.container .count {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.35rem;
+}
+.container .count .desc {
+  color: var(--gray-color);
+}
+.container .stats-container {
+  margin-top: 1.65rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  line-height: 1.1;
+}
+.container .stats-container .stats-el {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: var(--text-color);
+}
+.container .stats-container img {
+  width: 65px;
+  margin: 0 auto 0.25rem;
+}
