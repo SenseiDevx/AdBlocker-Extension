@@ -1,5 +1,4 @@
-import
-{
+import {
     getRulesEnabledState,
     enableRulesForCurrentPage,
     disableRulesForCurrentPage,
@@ -18,7 +17,6 @@ function init() {
     });
 
     button.addEventListener('click', toggleAdBlocking);
-    loadAndApplyTheme();
     updateButtonState();
     getCookiesCount();
 }
@@ -26,69 +24,8 @@ function init() {
 const TOGGLE = () => {
     const IS_PRESSED = BUTTON.checked;
     console.log(BUTTON.checked);
-    handleThemeChange(IS_PRESSED ? 'dark' : 'blue')
+    // Функция изменения темы удалена
 };
-
-function handleThemeChange(themeName) {
-    saveTheme(themeName);
-    loadAndApplyTheme();
-}
-
-function saveTheme(themeName) {
-    chrome.storage.sync.set({theme: themeName});
-}
-
-function loadAndApplyTheme() {
-    chrome.storage.sync.get('theme', (data) => {
-        if (data.theme) {
-            applyTheme(data.theme);
-        }
-    });
-}
-
-function applyTheme(themeName) {
-    switch (themeName) {
-        case 'blue':
-            BUTTON.checked = false;
-            document.body.style.background = 'white';
-            document.querySelector('.header-allow').style.background = 'rgb(220 233 247)';
-            document.querySelector('.footer').style.background = 'rgb(220 233 247)';
-            document.querySelector('.text-content').style.color = '#0f5da9';
-            document.querySelector('.domain').style.color = '#0f5da9';
-            document.querySelector('#nameEx').style.color = '#f4f4f4';
-
-            document.querySelector('.cookies_count').querySelector('p').style.color = '#0f5da9';
-            cookies.style.color = '#0f5da9';
-            break;
-        case 'dark':
-            BUTTON.checked = true;
-            document.body.style.background = '#444345';
-            document.querySelector('.header-allow').style.background = '#040404';
-            document.querySelector('.footer').style.background = '#040404';
-            document.querySelector('.text-content').style.color = 'white';
-            document.querySelector('.domain').style.color = '#f4f4f4';
-            document.querySelector('#nameEx').style.color = '#f4f4f4';
-
-            document.querySelector('.cookies_count').querySelector('p').style.color = 'white';
-            cookies.style.color = 'white';
-            break;
-    }
-    updateExtensionsStyle(themeName);
-}
-
-function updateExtensionsStyle(themeName) {
-    const extensionsTitle = document.querySelector('.extensions_title');
-    const extensionElements = document.querySelectorAll('.extension');
-
-    if (extensionsTitle) {
-        extensionsTitle.style.color =
-            themeName === 'violet' || themeName === 'dark' ? 'white' : 'black';
-    }
-
-    extensionElements.forEach((el) => {
-        el.style.color = themeName === 'violet' || themeName === 'dark' ? 'white' : 'black';
-    });
-}
 
 let a = 0;
 

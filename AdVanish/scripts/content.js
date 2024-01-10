@@ -1,6 +1,5 @@
 let intervalId
 
-
 const addClock = () => {
     console.log('addClock')
     let overlay = document.querySelector('.easyIt-ext')
