@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="popup.css"/>
+    <title>Popup</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="inner">
+        <div class="main_function">
+            <header class="header-allow">
+                <div class="header-inner">
+                    <div class="header-text">
+                      <span class="header-text-tittle">
+                        <p class="domain"></p>
+                      </span>
+                    </div>
+                    <div class="settings">
+                        <svg display="none">
+                            <symbol id="light" viewBox="0 0 24 24">
+                                <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                    <line x1="12" y1="17" x2="12" y2="20" transform="rotate(0,12,12)"/>
+                                    <line x1="12" y1="17" x2="12" y2="20" transform="rotate(45,12,12)"/>
+                                    <line x1="12" y1="17" x2="12" y2="20" transform="rotate(90,12,12)"/>
+                                    <line x1="12" y1="17" x2="12" y2="20" transform="rotate(135,12,12)"/>
+                                    <line x1="12" y1="17" x2="12" y2="20" transform="rotate(180,12,12)"/>
+                                    <line x1="12" y1="17" x2="12" y2="20" transform="rotate(225,12,12)"/>
+                                    <line x1="12" y1="17" x2="12" y2="20" transform="rotate(270,12,12)"/>
+                                    <line x1="12" y1="17" x2="12" y2="20" transform="rotate(315,12,12)"/>
+                                </g>
+                                <circle fill="currentColor" cx="12" cy="12" r="5"/>
+                            </symbol>
+                            <symbol id="dark" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                      d="M15.1,14.9c-3-0.5-5.5-3-6-6C8.8,7.1,9.1,5.4,9.9,4c0.4-0.8-0.4-1.7-1.2-1.4C4.6,4,1.8,7.9,2,12.5c0.2,5.1,4.4,9.3,9.5,9.5c4.5,0.2,8.5-2.6,9.9-6.6c0.3-0.8-0.6-1.7-1.4-1.2C18.6,14.9,16.9,15.2,15.1,14.9z"/>
+                            </symbol>
+                        </svg>
+                        <label class="switch">
+                            <input class="switch__input" type="checkbox" role="switch" name="dark"/>
+                            <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
+                                <use href="#light"/>
+                            </svg>
+                            <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
+                                <use href="#dark"/>
+                            </svg>
+                            <span class="switch__inner"></span>
+                            <span class="switch__inner-icons">
+                                <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
+                                    <use href="#light"/>
+                                </svg>
+                                <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
+                                    <use href="#dark"/>
+                                </svg>
+                            </span>
+                            <span class="switch__sr">Dark Mode</span>
+                        </label>
+                    </div>
+                </div>
+
+                <a class="info-link" href="../hello.html" target="_blank">
+                    <h3 id="nameEx">BlockStar</h3>
+                </a>
+            </header>
+            <div class="checkbox-wrapper-5">
+                <input id="checkbox" type="checkbox"/>
+                <label class="switch2" for="checkbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="slider2">
+                        <path
+                                d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.6c13.6-11.3 15.4-31.5 4.1-45.1s-31.5-15.4-45.1-4.1C49.7 115.4 16 181.8 16 256c0 132.5 107.5 240 240 240s240-107.5 240-240c0-74.2-33.8-140.6-86.6-184.6c-13.6-11.3-33.8-9.4-45.1 4.1s-9.4 33.8 4.1 45.1c38.9 32.3 63.5 81 63.5 135.4c0 97.2-78.8 176-176 176s-176-78.8-176-176c0-54.4 24.7-103.1 63.5-135.4z">
+                        </path>
+                    </svg>
+                </label>
+            </div>
+            <section class="footer">
+                <div class="row">
+                    <div class="col clock-option"><span>Show time on page </span><input type="checkbox"
+                                                                                        class="clock-ckeckbox"/>
+                    </div>
+                </div>
+                <p class="text-content"></p>
+                <div class="cookies_count">
+                    <p>Blocking ads on this site:</p>
+                    <span id="cookies"></span>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./popup.js" type="module"></script>
+</html>
