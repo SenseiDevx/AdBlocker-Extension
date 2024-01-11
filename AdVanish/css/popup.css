@@ -6,7 +6,7 @@
   --link-color: #0cb754;
   --link-active: #099344;
   --popup-text-color: #0f5da9;
-  --background-color: #ffffff;
+  --background-color: #abd7eb;
 }
 
 * {
@@ -21,6 +21,7 @@ body {
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   background-color: var(--background-color);
+  color: var(--main-color);
   height: 100%;
   direction: ltr !important;
 }
@@ -67,7 +68,6 @@ body {
 .wrapper .inner .main_function .header-allow h3 {
   width: 100%;
   display: block;
-  color: #0f5da9;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   text-align: center;
@@ -172,7 +172,7 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background-color: var(--background-color);
+  background-color: var(--main-color);
   border-radius: 8px;
   padding: 8px;
   display: -webkit-box;
@@ -254,6 +254,9 @@ body {
 .wrapper .inner .main_function .footer .row input[type=checkbox]:disabled {
   color: #66bb6a;
   cursor: not-allowed;
+}
+.wrapper .inner .main_function .footer .row .span {
+  color: var(--background-color);
 }
 .wrapper .inner .main_function .footer .cookies_count {
   display: -webkit-box;

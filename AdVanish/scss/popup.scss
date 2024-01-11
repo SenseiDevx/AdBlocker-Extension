@@ -7,7 +7,7 @@
   --link-color: #0cb754;
   --link-active: #099344;
   --popup-text-color: #0f5da9;
-  --background-color: #ffffff;
+  --background-color: #abd7eb;
 }
 
 * {
@@ -21,6 +21,7 @@ body {
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   background-color: var(--background-color);
+  color: var(--main-color);
   height: 100%;
   direction: ltr !important;
 }
@@ -51,7 +52,6 @@ body {
         h3 {
           width: 100%;
           display: block;
-          color: #0f5da9;
           font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
           font-size: 18px;
           text-align: center;
@@ -84,10 +84,12 @@ body {
           }
         }
       }
+
       .checkbox-wrapper-5 {
         display: flex;
         align-items: center;
         justify-content: center;
+
         .switch {
           position: relative;
           display: inline-block;
@@ -149,10 +151,11 @@ body {
       }
       .footer {
         padding-top: 20px;
+
         .row {
           width: max-content;
           height: max-content;
-          background-color: var(--background-color);
+          background-color: var(--main-color);
           border-radius: 8px;
           padding: 8px;
           display: flex;
@@ -222,6 +225,10 @@ body {
           input[type="checkbox"]:disabled {
             color: #66bb6a;
             cursor: not-allowed;
+          }
+
+          .span {
+            color: var(--background-color);
           }
         }
         .cookies_count {

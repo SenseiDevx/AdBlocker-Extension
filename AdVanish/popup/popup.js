@@ -8,24 +8,13 @@ const button = document.getElementById('checkbox');
 const text = document.querySelector('.text-content');
 const domain = document.querySelector('.domain');
 const cookies = document.querySelector('#cookies');
-const BUTTON = document.querySelector(".switch__input");
 
 function init() {
-    BUTTON.addEventListener("click", () => {
-        console.log(BUTTON);
-        TOGGLE();
-    });
-
     button.addEventListener('click', toggleAdBlocking);
     updateButtonState();
     getCookiesCount();
 }
 
-const TOGGLE = () => {
-    const IS_PRESSED = BUTTON.checked;
-    console.log(BUTTON.checked);
-    // Функция изменения темы удалена
-};
 
 let a = 0;
 

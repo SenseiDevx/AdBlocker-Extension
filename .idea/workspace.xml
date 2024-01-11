@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AdVanish/assets/images/ads-image.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdVanish/css/popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdVanish/prepros.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdVanish/scss/popup.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdVanish/assets/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/AdVanish/assets/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdVanish/assets/images/screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdVanish/assets/images/screen2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdVanish/hello.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdVanish/hello.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdVanish/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/AdVanish/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdVanish/popup/popup.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/AdVanish/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/AdVanish/popup/popup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdVanish/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdVanish/popup/popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdVanish/scripts/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdVanish/scripts/background.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdVanish/scripts/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdVanish/scripts/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdVanish/scripts/hello.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +36,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -68,7 +55,8 @@
       <updated>1704864244706</updated>
       <workItem from="1704864247928" duration="1329000" />
       <workItem from="1704897049671" duration="602000" />
-      <workItem from="1704901740672" duration="4681000" />
+      <workItem from="1704901740672" duration="5618000" />
+      <workItem from="1704950774990" duration="937000" />
     </task>
     <servers />
   </component>
