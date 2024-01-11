@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/AdSkipper/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdSkipper/assets/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/assets/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdSkipper/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/css/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdSkipper/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/popup/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdSkipper/scripts/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/scripts/background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdSkipper/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/scss/popup.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +45,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\User\Desktop\adblocker-extension\AdSkipper\assets\images" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\AdVanish\assets\images" />
     </key>
   </component>
@@ -55,6 +61,8 @@
       <workItem from="1704897049671" duration="602000" />
       <workItem from="1704901740672" duration="5618000" />
       <workItem from="1704950774990" duration="2732000" />
+      <workItem from="1704954329352" duration="739000" />
+      <workItem from="1704955247377" duration="3255000" />
     </task>
     <servers />
   </component>

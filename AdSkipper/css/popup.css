@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;600&display=swap");
 :root {
-  --main-color: #0f5da9;
-  --main-hover: #05305c;
-  --main-animation: #0f5da9;
-  --link-color: #0cb754;
+  --main-color: #000027;
+  --text-color: #ffffff;
+  --blue-color: #0093FE;
   --link-active: #099344;
   --popup-text-color: #0f5da9;
   --background-color: #abd7eb;

@@ -8,13 +8,7 @@ const button = document.getElementById('checkbox');
 const text = document.querySelector('.text-content');
 const domain = document.querySelector('.domain');
 const cookies = document.querySelector('#cookies');
-
-function init() {
-    button.addEventListener('click', toggleAdBlocking);
-    updateButtonState();
-    getCookiesCount();
-}
-
+const clockCheckbox = document.querySelector('.clock-ckeckbox');
 
 let a = 0;
 
@@ -35,25 +29,26 @@ async function updateButtonState() {
     if (!isEnabled) {
         text.innerHTML = 'Ad switched off.';
         button.checked = false;
-        chrome.action.setBadgeText({text: ''});
-        cookies.innerHTML = 0
+        chrome.action.setBadgeText({ text: '' });
+        cookies.innerHTML = 0;
         if (a > 0) showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
     } else {
         text.innerHTML = 'Ad blocker active, and now working';
         button.checked = true;
-        chrome.action.setBadgeText({text: 'ON'});
+        chrome.action.setBadgeText({ text: 'ON' });
         if (a > 0) showNotification('Ad Blocking Enabled', 'Ad blocking is enabled on this site.');
         setAlarmForNotification();
     }
 }
 
 async function fetchDomain() {
-    let [tab] = await chrome.tabs.query({active: true, currentWindow: true});
+    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
     if (tab?.url) {
         try {
-            let url = new URL(tab.url);
+            const url = new URL(tab.url);
             domain.innerHTML = url.hostname;
         } catch {
+            // Обработка ошибок, если URL некорректен
         }
     }
 }
@@ -62,8 +57,8 @@ function showNotification(title, message) {
     chrome.notifications.create('', {
         type: 'basic',
         iconUrl: '../assets/images/logo.png',
-        title: title,
-        message: message,
+        title,
+        message,
         priority: 2,
     });
 }
@@ -75,28 +70,32 @@ function setAlarmForNotification() {
 }
 
 function getCookiesCount() {
-    chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
-        var activeTab = tabs[0];
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+        const activeTab = tabs[0];
         if (activeTab.url) {
-            chrome.cookies.getAll({url: activeTab.url}, function (cookie) {
+            chrome.cookies.getAll({ url: activeTab.url }, (cookie) => {
                 cookies.innerHTML = cookie.length;
             });
         }
     });
 }
 
-init();
+function init() {
+    button.addEventListener('click', toggleAdBlocking);
+    updateButtonState();
+    getCookiesCount();
+}
 
-const clockCheckbox = document.querySelector(".clock-ckeckbox");
-
-chrome.storage.sync.get(["showClock"], (result) => {
+chrome.storage.sync.get(['showClock'], (result) => {
     clockCheckbox.checked = result.showClock;
 });
 
 if (clockCheckbox) {
-    clockCheckbox.addEventListener("click", async (e) => {
+    clockCheckbox.addEventListener('click', async (e) => {
         const checked = e.target.checked;
         console.log(checked);
-        chrome.storage.sync.set({showClock: checked});
+        chrome.storage.sync.set({ showClock: checked });
     });
 }
+
+init();
