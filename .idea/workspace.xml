@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdVanish/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/AdVanish/popup/popup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdVanish/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdVanish/popup/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdSkipper/manifest.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +54,7 @@
       <workItem from="1704864247928" duration="1329000" />
       <workItem from="1704897049671" duration="602000" />
       <workItem from="1704901740672" duration="5618000" />
-      <workItem from="1704950774990" duration="937000" />
+      <workItem from="1704950774990" duration="2732000" />
     </task>
     <servers />
   </component>
