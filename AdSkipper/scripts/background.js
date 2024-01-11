@@ -50,4 +50,10 @@ chrome.runtime.onInstalled.addListener(() => {
     chrome.declarativeNetRequest.setExtensionActionOptions({ displayActionCountAsBadgeText: false });
 });
 
+chrome.runtime.onInstalled.addListener(function(details) {
+    if (details.reason === "install") {
+        chrome.tabs.create({ url: "../hello/hello.html" });
+    }
+});
+
 

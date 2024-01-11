@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AdSkipper/assets/check-mark.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdSkipper/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdSkipper/scss/hello.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdSkipper/hello/hello.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdSkipper/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/css/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdSkipper/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/popup/popup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdSkipper/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/popup/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdSkipper/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/hello/hello.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdSkipper/scripts/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/scripts/background.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdSkipper/scripts/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/scripts/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdSkipper/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/scss/popup.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +43,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\User\Desktop\adblocker-extension\AdSkipper\hello" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\AdSkipper\assets" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\AdSkipper\assets\images" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\AdVanish\assets\images" />
@@ -68,7 +63,7 @@
       <workItem from="1704950774990" duration="2732000" />
       <workItem from="1704954329352" duration="739000" />
       <workItem from="1704955247377" duration="4113000" />
-      <workItem from="1704965304834" duration="4833000" />
+      <workItem from="1704965304834" duration="5779000" />
     </task>
     <servers />
   </component>
