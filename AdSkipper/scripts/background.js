@@ -49,3 +49,5 @@ export async function disableRulesForCurrentPage() {
 chrome.runtime.onInstalled.addListener(() => {
     chrome.declarativeNetRequest.setExtensionActionOptions({ displayActionCountAsBadgeText: false });
 });
+
+

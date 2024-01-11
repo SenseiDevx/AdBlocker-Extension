@@ -26,10 +26,8 @@ body {
 }
 
 .wrapper {
-  width: 220px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  width: 400px;
+  height: 600px;
   padding: 20px;
 }
 .wrapper .inner {

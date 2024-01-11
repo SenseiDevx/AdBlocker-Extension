@@ -8,7 +8,6 @@ const button = document.getElementById('checkbox');
 const text = document.querySelector('.text-content');
 const domain = document.querySelector('.domain');
 const cookies = document.querySelector('#cookies');
-const clockCheckbox = document.querySelector('.clock-ckeckbox');
 
 let a = 0;
 
@@ -80,22 +79,12 @@ function getCookiesCount() {
     });
 }
 
+
+
 function init() {
     button.addEventListener('click', toggleAdBlocking);
     updateButtonState();
     getCookiesCount();
-}
-
-chrome.storage.sync.get(['showClock'], (result) => {
-    clockCheckbox.checked = result.showClock;
-});
-
-if (clockCheckbox) {
-    clockCheckbox.addEventListener('click', async (e) => {
-        const checked = e.target.checked;
-        console.log(checked);
-        chrome.storage.sync.set({ showClock: checked });
-    });
 }
 
 init();
