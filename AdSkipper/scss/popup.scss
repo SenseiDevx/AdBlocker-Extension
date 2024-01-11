@@ -6,7 +6,7 @@
   --blue-color: #0093FE;
   --link-active: #099344;
   --popup-text-color: #0f5da9;
-  --background-color: #abd7eb;
+  --background-color: #ffffff;
 }
 
 * {
@@ -26,8 +26,8 @@ body {
 }
 
 .wrapper {
-  width: 400px;
-  height: 600px;
+  width: 300px;
+  height: max-content;
   padding: 20px;
 
   .inner {
@@ -86,14 +86,15 @@ body {
 
       .checkbox-wrapper-5 {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
 
         .switch {
           position: relative;
           display: inline-block;
-          width: 60px;
-          height: 34px;
+          width: 120px;
+          height: 54px;
         }
 
         .switch input {
@@ -109,7 +110,7 @@ body {
           left: 0;
           right: 0;
           bottom: 0;
-          background-color: #ccc;
+          background-color: red;
           -webkit-transition: .4s;
           transition: .4s;
         }
@@ -117,8 +118,8 @@ body {
         .slider:before {
           position: absolute;
           content: "";
-          height: 26px;
-          width: 26px;
+          height: 46px;
+          width: 46px;
           left: 4px;
           bottom: 4px;
           background-color: white;
@@ -127,17 +128,17 @@ body {
         }
 
         input:checked + .slider {
-          background-color: #66bb6a;
+          background-color: #008000;
         }
 
         input:focus + .slider {
-          box-shadow: 0 0 1px #66bb6a;
+          box-shadow: 0 0 1px #008000;
         }
 
         input:checked + .slider:before {
-          -webkit-transform: translateX(26px);
-          -ms-transform: translateX(26px);
-          transform: translateX(26px);
+          -webkit-transform: translateX(66px);
+          -ms-transform: translateX(66px);
+          transform: translateX(66px);
         }
 
         .slider.round {
@@ -151,96 +152,51 @@ body {
       .footer {
         padding-top: 20px;
 
-        .row {
-          width: max-content;
-          height: max-content;
-          background-color: var(--main-color);
-          border-radius: 8px;
-          padding: 8px;
+        .first-block {
+          .text-content {
+            text-align: center;
+            padding-bottom: 15px;
+            font-size: 22px;
+          }
+          .cookies_count {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            p {
+              font-family: system-ui, sans-serif;
+              font-size: 15px;
+            }
+            span {
+              font-family: system-ui, sans-serif;
+              font-size: 15px;
+            }
+          }
+        }
+        .second-block{
+          margin-top: 15px;
           display: flex;
           align-items: center;
           justify-content: center;
-
-          .form-control {
-            font-family: system-ui, sans-serif;
-            font-size: 1rem;
-            font-weight: bold;
-            line-height: 1.1;
-            display: grid;
-            grid-template-columns: 1em auto;
-            gap: 0.5em;
-          }
-
-          .form-control + .form-control {
-            margin-top: 1em;
-            color: #66bb6a;
-          }
-
-          .form-control--disabled {
-            color: #66bb6a;
-            cursor: not-allowed;
-          }
-
-          input[type="checkbox"] {
-            -webkit-appearance: none;
-            appearance: none;
-            background-color: var(--form-background);
-            margin: 0;
-            font: inherit;
-            width: 1.15em;
-            height: 1.15em;
-            border: 0.15em solid currentColor;
-            border-radius: 0.15em;
-            transform: translateY(-0.075em);
-            display: grid;
-            place-content: center;
-            color: #66bb6a;
-          }
-
-          input[type="checkbox"]::before {
-            content: "";
-            width: 0.65em;
-            height: 0.65em;
-            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-            transform: scale(0);
-            transform-origin: bottom left;
-            transition: 120ms transform ease-in-out;
-            box-shadow: inset 1em 1em var(--form-control-color);
-            background-color: CanvasText;
-            color: #66bb6a;
-          }
-
-          input[type="checkbox"]:checked::before {
-            transform: scale(1);
-            color: #66bb6a;
-          }
-
-          input[type="checkbox"]:focus {
-            outline: max(2px, 0.15em) solid currentColor;
-            color: #66bb6a;
-            outline-offset: max(2px, 0.15em);
-          }
-
-          input[type="checkbox"]:disabled {
-            color: #66bb6a;
-            cursor: not-allowed;
-          }
-
-          .span {
-            color: var(--background-color);
-          }
-        }
-        .cookies_count {
-          display: flex;
+          width: 100%;
+          backdrop-filter: blur(10px);
+          background-color: rgba(189, 189, 189, 0.3);
+          animation: changeWidth 8s ease-in-out infinite;
+          padding: 5px;
+          border-radius: 8px;
           gap: 8px;
-          align-items: center;
-          .img {
-            width: 25px;
-            height: 25px;
+          cursor: pointer;
+          transition: 0.4s;
+          &:hover {
+            transform: scale(1.1);
           }
-          span {
+          .pause {
+            width: 35px;
+            height: 35px;
+          }
+          p {
             font-family: system-ui, sans-serif;
-            font-size: 30px;
+            font-size: 16px;
+            color: gray;
           }
         }
       }

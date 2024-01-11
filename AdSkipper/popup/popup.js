@@ -26,13 +26,15 @@ async function updateButtonState() {
     const isEnabled = await getRulesEnabledState();
     fetchDomain();
     if (!isEnabled) {
-        text.innerHTML = 'Ad switched off.';
+        text.innerHTML = 'OFF';
+        document.querySelector('.text-content').style.color = 'red'
         button.checked = false;
         chrome.action.setBadgeText({ text: '' });
         cookies.innerHTML = 0;
         if (a > 0) showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
     } else {
-        text.innerHTML = 'Ad blocker active, and now working';
+        text.innerHTML = 'ON';
+        document.querySelector('.text-content').style.color = '#008000'
         button.checked = true;
         chrome.action.setBadgeText({ text: 'ON' });
         if (a > 0) showNotification('Ad Blocking Enabled', 'Ad blocking is enabled on this site.');
