@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "AdStopper",
-    "description": "BlockStar is an extension that blocks all ads on every website and assists with time management in the browser",
+    "description": "AdStopper: No more ads! Blocks banners, pop-ups, and video ads for a smoother browsing.",
     "version": "1.0.0",
     "permissions": [
         "declarativeNetRequest",
