@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "BlockStar",
+    "name": "AdStopper",
     "description": "BlockStar is an extension that blocks all ads on every website and assists with time management in the browser",
     "version": "1.0.0",
     "permissions": [
@@ -9,8 +9,7 @@
         "notifications",
         "alarms",
         "storage",
-        "cookies",
-        "scripting"
+        "cookies"
     ],
     "host_permissions": [
         "<all_urls>"
