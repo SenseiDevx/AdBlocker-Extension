@@ -36,7 +36,7 @@ async function updateButtonState() {
         if (a > 0) showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
     } else {
         text.innerHTML = 'ON';
-        document.querySelector('.text-content').style.color = '#008000'
+        document.querySelector('.text-content').style.color = '#00FF00'
         button.checked = true;
         chrome.action.setBadgeText({ text: 'ON' });
         if (a > 0) showNotification('Ad Blocking Enabled', 'Ad blocking is enabled on this site.');
@@ -45,16 +45,27 @@ async function updateButtonState() {
 }
 
 
-function togglePauseResume() {
-    if (pauseButton.textContent.includes('Pause AdBlock')) {
-        mainFunction.style.display = 'none';
-        pauseButton.textContent = 'Resume AdBlocker';
-    } else {
-        mainFunction.style.display = 'block';
-        pauseButton.textContent = 'Pause AdBlock';
-        pauseButton.innerHTML = '<img class="pause" src="../assets/pause-button.svg" alt="pause-icon"> Pause AdBlock';
+async function togglePauseResume() {
+    try {
+        if (pauseButton.textContent.includes('Pause AdBlock')) {
+            await disableRulesForCurrentPage();
+            chrome.storage.local.set({ adblockPaused: true });
+            mainFunction.style.display = 'none';
+            pauseButton.textContent = 'Resume AdBlocker';
+            pauseButton.innerHTML = '<img class="pause" src="../assets/play-button.svg" alt="pause-icon"> Resume AdBlock';
+        } else {
+            await enableRulesForCurrentPage();
+            chrome.storage.local.set({ adblockPaused: false });
+            mainFunction.style.display = 'block';
+            pauseButton.textContent = 'Pause AdBlock';
+            pauseButton.innerHTML = '<img class="pause" src="../assets/pause-button.svg" alt="pause-icon"> Pause AdBlock';
+        }
+        updateButtonState();
+    } catch (error) {
+        console.error('Ошибка при переключении Adblock:', error);
     }
 }
+
 
 
 async function fetchDomain() {
@@ -97,10 +108,18 @@ function getCookiesCount() {
 }
 
 
-
 function init() {
-    mainFunction.style.display = 'block';
-    pauseButton.innerHTML = '<img class="pause" src="../assets/pause-button.svg" alt="pause-icon"> Pause AdBlock';
+    chrome.storage.local.get(['adblockPaused'], function(result) {
+        if (result.adblockPaused) {
+            mainFunction.style.display = 'none';
+            pauseButton.textContent = 'Resume AdBlocker';
+            pauseButton.innerHTML = '<img class="pause" src="../assets/play-button.svg" alt="pause-icon"> Resume AdBlock';
+        } else {
+            mainFunction.style.display = 'block';
+            pauseButton.textContent = 'Pause AdBlock';
+            pauseButton.innerHTML = '<img class="pause" src="../assets/pause-button.svg" alt="pause-icon"> Pause AdBlock';
+        }
+    });
 
     button.addEventListener('click', toggleAdBlocking);
     pauseButton.addEventListener('click', togglePauseResume);
@@ -108,4 +127,4 @@ function init() {
     getCookiesCount();
 }
 
-init();
+init()

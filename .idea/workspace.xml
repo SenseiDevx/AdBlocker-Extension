@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/AdSkipper/assets/play-button.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdSkipper/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/css/popup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdSkipper/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/popup/popup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdSkipper/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/popup/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdSkipper/scripts/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/scripts/background.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdSkipper/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/scss/popup.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +36,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/User/Desktop/adblocker-extension/AdSkipper/assets&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -43,6 +46,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\User\Desktop\adblocker-extension\AdSkipper\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Users\User\Desktop\adblocker-extension\AdSkipper\assets\images" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\AdSkipper\assets" />
@@ -65,7 +71,9 @@
       <workItem from="1704954329352" duration="739000" />
       <workItem from="1704955247377" duration="4113000" />
       <workItem from="1704965304834" duration="8470000" />
-      <workItem from="1705037348367" duration="2406000" />
+      <workItem from="1705037348367" duration="3091000" />
+      <workItem from="1705071597916" duration="1681000" />
+      <workItem from="1705073438244" duration="1896000" />
     </task>
     <servers />
   </component>
