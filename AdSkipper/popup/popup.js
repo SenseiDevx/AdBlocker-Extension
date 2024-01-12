@@ -8,6 +8,8 @@ const button = document.getElementById('checkbox');
 const text = document.querySelector('.text-content');
 const domain = document.querySelector('.domain');
 const cookies = document.querySelector('#cookies');
+const pauseButton = document.querySelector('.pause-block')
+const mainFunction = document.querySelector('.main_function')
 
 let a = 0;
 
@@ -42,6 +44,19 @@ async function updateButtonState() {
     }
 }
 
+
+function togglePauseResume() {
+    if (pauseButton.textContent.includes('Pause AdBlock')) {
+        mainFunction.style.display = 'none';
+        pauseButton.textContent = 'Resume AdBlocker';
+    } else {
+        mainFunction.style.display = 'block';
+        pauseButton.textContent = 'Pause AdBlock';
+        pauseButton.innerHTML = '<img class="pause" src="../assets/pause-button.svg" alt="pause-icon"> Pause AdBlock';
+    }
+}
+
+
 async function fetchDomain() {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
     if (tab?.url) {
@@ -49,7 +64,7 @@ async function fetchDomain() {
             const url = new URL(tab.url);
             domain.innerHTML = url.hostname;
         } catch {
-            // Обработка ошибок, если URL некорректен
+            console.log("Error")
         }
     }
 }
@@ -84,7 +99,11 @@ function getCookiesCount() {
 
 
 function init() {
+    mainFunction.style.display = 'block';
+    pauseButton.innerHTML = '<img class="pause" src="../assets/pause-button.svg" alt="pause-icon"> Pause AdBlock';
+
     button.addEventListener('click', toggleAdBlocking);
+    pauseButton.addEventListener('click', togglePauseResume);
     updateButtonState();
     getCookiesCount();
 }

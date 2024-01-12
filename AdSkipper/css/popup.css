@@ -168,12 +168,12 @@ body {
 .wrapper .inner .main_function .footer {
   padding-top: 20px;
 }
-.wrapper .inner .main_function .footer .first-block .text-content {
+.wrapper .inner .main_function .footer .text-content {
   text-align: center;
   padding-bottom: 15px;
   font-size: 22px;
 }
-.wrapper .inner .main_function .footer .first-block .cookies_count {
+.wrapper .inner .main_function .footer .cookies_count {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,15 +182,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.wrapper .inner .main_function .footer .first-block .cookies_count p {
+.wrapper .inner .main_function .footer .cookies_count p {
   font-family: system-ui, sans-serif;
   font-size: 15px;
 }
-.wrapper .inner .main_function .footer .first-block .cookies_count span {
+.wrapper .inner .main_function .footer .cookies_count span {
   font-family: system-ui, sans-serif;
   font-size: 15px;
 }
-.wrapper .inner .main_function .footer .second-block {
+.wrapper .inner .pause-block {
   margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,15 +214,15 @@ body {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.wrapper .inner .main_function .footer .second-block:hover {
+.wrapper .inner .pause-block:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-.wrapper .inner .main_function .footer .second-block .pause {
+.wrapper .inner .pause-block .pause {
   width: 35px;
   height: 35px;
 }
-.wrapper .inner .main_function .footer .second-block p {
+.wrapper .inner .pause-block p {
   font-family: system-ui, sans-serif;
   font-size: 16px;
   color: gray;

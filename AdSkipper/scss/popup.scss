@@ -149,56 +149,61 @@ body {
           border-radius: 50%;
         }
       }
+
       .footer {
         padding-top: 20px;
 
-        .first-block {
-          .text-content {
-            text-align: center;
-            padding-bottom: 15px;
-            font-size: 22px;
-          }
-          .cookies_count {
-            display: flex;
-            gap: 8px;
-            align-items: center;
-            p {
-              font-family: system-ui, sans-serif;
-              font-size: 15px;
-            }
-            span {
-              font-family: system-ui, sans-serif;
-              font-size: 15px;
-            }
-          }
+        .text-content {
+          text-align: center;
+          padding-bottom: 15px;
+          font-size: 22px;
         }
-        .second-block{
-          margin-top: 15px;
+
+        .cookies_count {
           display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 100%;
-          backdrop-filter: blur(10px);
-          background-color: rgba(189, 189, 189, 0.3);
-          animation: changeWidth 8s ease-in-out infinite;
-          padding: 5px;
-          border-radius: 8px;
           gap: 8px;
-          cursor: pointer;
-          transition: 0.4s;
-          &:hover {
-            transform: scale(1.1);
-          }
-          .pause {
-            width: 35px;
-            height: 35px;
-          }
+          align-items: center;
+
           p {
             font-family: system-ui, sans-serif;
-            font-size: 16px;
-            color: gray;
+            font-size: 15px;
+          }
+
+          span {
+            font-family: system-ui, sans-serif;
+            font-size: 15px;
           }
         }
+      }
+    }
+    .pause-block {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      backdrop-filter: blur(10px);
+      background-color: rgba(189, 189, 189, 0.3);
+      animation: changeWidth 8s ease-in-out infinite;
+      padding: 5px;
+      border-radius: 8px;
+      gap: 8px;
+      cursor: pointer;
+      transition: 0.4s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .pause {
+        width: 35px;
+        height: 35px;
+      }
+
+      p {
+        font-family: system-ui, sans-serif;
+        font-size: 16px;
+        color: gray;
       }
     }
   }

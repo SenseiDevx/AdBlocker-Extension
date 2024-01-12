@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AdSkipper/assets/pause-button.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdSkipper/assets/images/ads-image.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/AdSkipper/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/css/popup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdSkipper/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/popup/popup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdSkipper/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/popup/popup.js" afterDir="false" />
@@ -67,6 +65,7 @@
       <workItem from="1704954329352" duration="739000" />
       <workItem from="1704955247377" duration="4113000" />
       <workItem from="1704965304834" duration="8470000" />
+      <workItem from="1705037348367" duration="2406000" />
     </task>
     <servers />
   </component>
