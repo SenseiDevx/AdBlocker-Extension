@@ -5,29 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/_metadata/generated_indexed_rulesets/_ruleset1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/assets/check-mark.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/assets/pause-button.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/assets/play-button.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/css/hello.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/css/popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/hello/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/hello/hello.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/popup/popup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/popup/popup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/rulesets/main/default.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/scripts/background.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/scripts/content.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/scss/hello.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/scss/popup.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NoAdsNow/assets/no-ads.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdErase/css/hello.css" beforeDir="false" afterPath="$PROJECT_DIR$/AdErase/css/hello.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdErase/hello/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/AdErase/hello/hello.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdErase/scss/hello.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AdErase/scss/hello.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdErase/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AdErase/scss/popup.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdStopper/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AdStopper/scss/popup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoAdsNow/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/NoAdsNow/css/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoAdsNow/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/NoAdsNow/popup/popup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoAdsNow/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/NoAdsNow/popup/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoAdsNow/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/NoAdsNow/scss/popup.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +52,11 @@
       <recent name="D:\Users\User\Desktop\adblocker-extension\AdSkipper\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\User\Desktop\adblocker-extension\NoAdsNow\assets" />
+      <recent name="D:\Users\User\Desktop\adblocker-extension\NoAdsNow\assets\images" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\BlockEase\assets\images" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\AdErase\assets\images" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\AdSkipper\assets\images" />
-      <recent name="D:\Users\User\Desktop\adblocker-extension\AdSkipper\assets" />
-      <recent name="D:\Users\User\Desktop\adblocker-extension\AdSkipper\hello" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -96,7 +79,7 @@
       <workItem from="1705073438244" duration="4093000" />
       <workItem from="1705146568681" duration="66000" />
       <workItem from="1705155858287" duration="2317000" />
-      <workItem from="1705159361549" duration="3545000" />
+      <workItem from="1705159361549" duration="4878000" />
     </task>
     <servers />
   </component>

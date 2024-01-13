@@ -29,7 +29,7 @@
         }
     ],
     "action": {
-        "default_title": "BlockStar",
+        "default_title": "AdStopper",
         "default_popup": "popup/popup.html",
         "default_icon": {
             "16": "assets/images/logo.png",

@@ -29,7 +29,7 @@
         }
     ],
     "action": {
-        "default_title": "BlockStar",
+        "default_title": "BlockEase",
         "default_popup": "popup/popup.html",
         "default_icon": {
             "16": "assets/images/logo.png",

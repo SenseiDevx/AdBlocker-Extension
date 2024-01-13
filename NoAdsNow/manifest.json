@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "NoAdsNow",
-    "description": "AdErase: Web Without Ads! Block banners, pop-ups, and videos for seamless browsing.",
+    "description": "NoAdsNow: Ad-Free Browsing! Stops banners, pop-ups, videos for smooth surfing.",
     "version": "1.0.0",
     "permissions": [
         "declarativeNetRequest",
