@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NoAdsNow/assets/no-ads.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoAdsNow/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/NoAdsNow/css/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoAdsNow/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/NoAdsNow/popup/popup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoAdsNow/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/NoAdsNow/popup/popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoAdsNow/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/NoAdsNow/scss/popup.scss" afterDir="false" />
-    </list>
+    <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +72,7 @@
       <workItem from="1705073438244" duration="4093000" />
       <workItem from="1705146568681" duration="66000" />
       <workItem from="1705155858287" duration="2317000" />
-      <workItem from="1705159361549" duration="4878000" />
+      <workItem from="1705159361549" duration="5176000" />
     </task>
     <servers />
   </component>
