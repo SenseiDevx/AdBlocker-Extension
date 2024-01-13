@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "AdStopper",
-    "description": "AdStopper: No more ads! Blocks banners, pop-ups, and video ads for a smoother browsing.",
+    "name": "AdErase",
+    "description": "AdErase: Web Without Ads! Block banners, pop-ups, and videos for seamless browsing.",
     "version": "1.0.0",
     "permissions": [
         "declarativeNetRequest",

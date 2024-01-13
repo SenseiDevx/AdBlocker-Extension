@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;600&display=swap");
 :root {
-  --main-color: #000027;
+  --main-color: #110f1e;
   --text-color: #ffffff;
   --blue-color: #0093FE;
   --link-active: #099344;
   --popup-text-color: #0f5da9;
-  --background-color: #ffffff;
+  --background-color: #110f1e;
 }
 
 * {
@@ -19,8 +19,8 @@ body {
   font-family: "Anek Kannada", sans-serif;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--background-color);
-  color: var(--main-color);
+  background-color: var(--text-color);
+  color: var(--text-color);
   height: 100%;
   direction: ltr !important;
 }
@@ -34,6 +34,11 @@ body {
 }
 .wrapper .inner {
   height: 100%;
+  background-color: var(--background-color);
+  padding: 15px;
+  border-radius: 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
 }
 .wrapper .inner .header-allow {
   width: 100%;
@@ -83,6 +88,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.wrapper .inner .main_function .checkbox-wrapper-5 .text-content {
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 22px;
 }
 .wrapper .inner .main_function .checkbox-wrapper-5 .switch {
   position: relative;
@@ -137,11 +147,6 @@ body {
 .wrapper .inner .main_function .footer {
   padding-top: 20px;
 }
-.wrapper .inner .main_function .footer .text-content {
-  text-align: center;
-  padding-bottom: 15px;
-  font-size: 22px;
-}
 .wrapper .inner .main_function .footer .cookies_count {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,7 +158,7 @@ body {
 }
 .wrapper .inner .main_function .footer .cookies_count p {
   font-family: system-ui, sans-serif;
-  font-size: 15px;
+  font-size: 12px;
 }
 .wrapper .inner .main_function .footer .cookies_count span {
   font-family: system-ui, sans-serif;

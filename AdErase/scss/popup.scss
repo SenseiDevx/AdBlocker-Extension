@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;600&display=swap');
 
 :root {
-  --main-color: #000027;
+  --main-color: #110f1e;
   --text-color: #ffffff;
   --blue-color: #0093FE;
   --link-active: #099344;
   --popup-text-color: #0f5da9;
-  --background-color: #ffffff;
+  --background-color: #110f1e;
 }
 
 * {
@@ -19,8 +19,8 @@ body {
   font-family: 'Anek Kannada', sans-serif;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--background-color);
-  color: var(--main-color);
+  background-color: var(--text-color);
+  color: var(--text-color);
   height: 100%;
   direction: ltr !important;
 }
@@ -32,6 +32,10 @@ body {
 
   .inner {
     height: 100%;
+    background-color: var(--background-color);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
 
     .header-allow {
       width: 100%;
@@ -61,6 +65,12 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        .text-content {
+          text-align: center;
+          padding-bottom: 15px;
+          font-size: 22px;
+        }
 
         .switch {
           position: relative;
@@ -125,12 +135,6 @@ body {
       .footer {
         padding-top: 20px;
 
-        .text-content {
-          text-align: center;
-          padding-bottom: 15px;
-          font-size: 22px;
-        }
-
         .cookies_count {
           display: flex;
           gap: 8px;
@@ -138,7 +142,7 @@ body {
 
           p {
             font-family: system-ui, sans-serif;
-            font-size: 15px;
+            font-size: 12px;
           }
 
           span {
