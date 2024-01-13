@@ -6,7 +6,7 @@
   --blue-color: #0093FE;
   --link-active: #099344;
   --popup-text-color: #0f5da9;
-  --background-color: #110f1e;
+  --background-color: #395886;
 }
 
 * {
@@ -20,7 +20,7 @@ body {
   font-family: 'Anek Kannada', sans-serif;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--text-color);
+  background-color: var(--background-color);
   color: var(--text-color);
   height: 100%;
   direction: ltr !important;
@@ -33,10 +33,21 @@ body {
 
   .inner {
     height: 100%;
-    background-color: var(--background-color);
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
+
+    .icon-block {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: center;
+      .image {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+      }
+      h2 {
+        font-family: system-ui, sans-serif;
+      }
+    }
 
     .header-allow {
       width: 100%;
@@ -48,9 +59,9 @@ body {
         text-align: center;
         font-family: system-ui, sans-serif;
         font-size: 18px;
-        color: var(--blue-color);
         text-decoration: underline;
         cursor: pointer;
+        padding-top: 15px;
       }
     }
 
@@ -78,6 +89,7 @@ body {
           display: inline-block;
           width: 120px;
           height: 54px;
+          margin-top: 30px;
         }
 
         .switch input {
@@ -180,7 +192,6 @@ body {
       p {
         font-family: system-ui, sans-serif;
         font-size: 16px;
-        color: gray;
       }
     }
   }

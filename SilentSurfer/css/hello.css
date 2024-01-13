@@ -33,7 +33,9 @@ body {
   border-radius: 15px;
 }
 .wrapper img {
-  width: 200px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   height: 200px;
 }
 .wrapper h2 {

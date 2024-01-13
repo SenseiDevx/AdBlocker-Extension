@@ -30,7 +30,7 @@ async function updateButtonState() {
     if (!isEnabled) {
         text.innerHTML = 'OFF';
         document.querySelector('.text-content').style.color = 'red'
-        document.querySelector('body').style.backgroundColor = 'red'
+        document.querySelector('body').style.backgroundColor = '#730000'
         button.checked = false;
         chrome.action.setBadgeText({ text: '' });
         cookies.innerHTML = 0;
@@ -38,7 +38,7 @@ async function updateButtonState() {
     } else {
         text.innerHTML = 'ON';
         document.querySelector('.text-content').style.color = '#00FF00'
-        document.querySelector('body').style.backgroundColor = '#00FF00'
+        document.querySelector('body').style.backgroundColor = '#395886'
         button.checked = true;
         chrome.action.setBadgeText({ text: 'ON' });
         if (a > 0) showNotification('Ad Blocking Enabled', 'Ad blocking is enabled on this site.');

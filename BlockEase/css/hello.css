@@ -14,7 +14,9 @@
           justify-content: center;
 }
 .wrapper img {
-  width: 300px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   height: 300px;
 }
 .wrapper h2 {

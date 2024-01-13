@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "AdErase",
-    "description": "AdErase: Web Without Ads! Block banners, pop-ups, and videos for seamless browsing.",
+    "name": "SilentSurfer",
+    "description": "SilentSurfer: Surf Clean! No banners, pop-ups, or videos for smooth browsing.",
     "version": "1.0.0",
     "permissions": [
         "declarativeNetRequest",
@@ -29,7 +29,7 @@
         }
     ],
     "action": {
-        "default_title": "AdErase",
+        "default_title": "SilentSurfer",
         "default_popup": "popup/popup.html",
         "default_icon": {
             "16": "assets/images/logo.png",
