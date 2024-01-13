@@ -1,0 +1,59 @@
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper img {
+  width: 300px;
+  height: 300px;
+}
+.wrapper h2 {
+  font-family: system-ui, sans-serif;
+  font-size: 36px;
+  text-align: center;
+  color: #008000;
+}
+.wrapper h2 span {
+  font-family: system-ui, sans-serif;
+  font-size: 36px;
+  text-align: center;
+  color: black;
+}
+.wrapper p {
+  font-family: system-ui, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: gray;
+}
+.wrapper .got-it-button {
+  background-color: #008000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  -webkit-transition: background-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: background-color 0.3s, -webkit-box-shadow 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+.wrapper .got-it-button:hover {
+  background-color: #45a049;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
