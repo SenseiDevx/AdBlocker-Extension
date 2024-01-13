@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "AdErase",
-    "description": "AdErase: Web Without Ads! Block banners, pop-ups, and videos for seamless browsing.",
+    "name": "BlockEase",
+    "description": "BlockEase: Navigate Ad-Free! Banish banners, pop-ups, and video ads for uninterrupted surfing.",
     "version": "1.0.0",
     "permissions": [
         "declarativeNetRequest",

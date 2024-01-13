@@ -38,7 +38,7 @@ async function updateButtonState() {
     } else {
         text.innerHTML = 'ON';
         document.querySelector('.text-content').style.color = '#00FF00'
-        document.querySelector('body').style.backgroundColor = '#00FF00'
+        document.querySelector('body').style.backgroundColor = '#0c415d'
         button.checked = true;
         chrome.action.setBadgeText({ text: 'ON' });
         if (a > 0) showNotification('Ad Blocking Enabled', 'Ad blocking is enabled on this site.');
