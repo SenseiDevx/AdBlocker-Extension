@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AdSkipper/assets/play-button.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdSkipper/assets/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/assets/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdSkipper/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/css/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdSkipper/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/popup/popup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdSkipper/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/popup/popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdSkipper/scripts/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/scripts/background.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdSkipper/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AdSkipper/scss/popup.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +67,8 @@
       <workItem from="1704965304834" duration="8470000" />
       <workItem from="1705037348367" duration="3091000" />
       <workItem from="1705071597916" duration="1681000" />
-      <workItem from="1705073438244" duration="2277000" />
+      <workItem from="1705073438244" duration="4093000" />
+      <workItem from="1705146568681" duration="66000" />
     </task>
     <servers />
   </component>
