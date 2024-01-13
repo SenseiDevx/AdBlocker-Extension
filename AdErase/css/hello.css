@@ -1,3 +1,16 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,20 +25,26 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: 2px solid #008000;
+  padding: 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 15px;
 }
 .wrapper img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 .wrapper h2 {
   font-family: system-ui, sans-serif;
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
   color: #008000;
 }
 .wrapper h2 span {
   font-family: system-ui, sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   text-align: center;
   color: black;
 }

@@ -1,30 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 2px solid #008000;
+  padding: 20px;
+  width: max-content;
+  border-radius: 15px;
+
   img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
+
   h2 {
     font-family: system-ui, sans-serif;
-    font-size: 36px;
+    font-size: 28px;
     text-align: center;
     color: #008000;
+
     span {
       font-family: system-ui, sans-serif;
-      font-size: 36px;
+      font-size: 30px;
       text-align: center;
       color: black;
     }
   }
+
   p {
     font-family: system-ui, sans-serif;
     font-size: 18px;
     text-align: center;
     color: gray;
   }
+
   .got-it-button {
     background-color: #008000;
     border: none;
@@ -42,7 +58,7 @@
 
   .got-it-button:hover {
     background-color: #45a049;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
 }
