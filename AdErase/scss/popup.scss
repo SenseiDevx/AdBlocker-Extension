@@ -1,41 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;600&display=swap');
 
 :root {
-  --main-color: #110f1e;
-  --text-color: #ffffff;
-  --blue-color: #0093FE;
+  --main-color: #1A1A2E;
+  --text-color: #E6E6E6;
+  --accent-color: #0f3460;
   --link-active: #099344;
-  --popup-text-color: #0f5da9;
-  --background-color: #110f1e;
+  --background-color: #16213E;
+  --hover-color: #5352ed;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: 0.6s;
+  transition: 0.3s;
 }
 
 body {
   font-family: 'Anek Kannada', sans-serif;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--text-color);
+  background-color: var(--background-color);
   color: var(--text-color);
   height: 100%;
   direction: ltr !important;
 }
 
 .wrapper {
-  width: 300px;
+  width: 350px;
   height: max-content;
-  padding: 20px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
 
   .inner {
     height: 100%;
-    background-color: var(--background-color);
-    padding: 15px;
-    border-radius: 12px;
+    background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
 
     .header-allow {
@@ -43,93 +45,92 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: 20px;
 
       .domain {
         text-align: center;
-        font-family: system-ui, sans-serif;
-        font-size: 18px;
-        color: var(--blue-color);
+        font-family: 'Anek Kannada', sans-serif;
+        font-size: 20px;
+        color: var(--text-color);
         text-decoration: underline;
         cursor: pointer;
       }
     }
 
     .main_function {
-      width: 100%;
-      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
 
       .checkbox-wrapper-5 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        text-align: center;
+
+        h2 {
+          color: var(--text-color);
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
 
         .text-content {
-          text-align: center;
+          color: var(--text-color);
+          font-size: 18px;
           padding-bottom: 15px;
-          font-size: 22px;
         }
 
         .switch {
           position: relative;
           display: inline-block;
-          width: 120px;
-          height: 54px;
-        }
+          width: 60px;
+          height: 34px;
+          margin-top: 10px;
 
-        .switch input {
-          opacity: 0;
-          width: 0;
-          height: 0;
-        }
+          input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
 
-        .slider {
-          position: absolute;
-          cursor: pointer;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-color: red;
-          -webkit-transition: .4s;
-          transition: .4s;
-        }
+          .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--hover-color);
+            transition: 0.4s;
+          }
 
-        .slider:before {
-          position: absolute;
-          content: "";
-          height: 46px;
-          width: 46px;
-          left: 4px;
-          bottom: 4px;
-          background-color: white;
-          -webkit-transition: .4s;
-          transition: .4s;
-        }
+          .slider:before {
+            position: absolute;
+            content: '';
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: 0.4s;
+          }
 
-        input:checked + .slider {
-          background-color: #00FF00;
-        }
+          input:checked + .slider {
+            background-color: var(--link-active);
+          }
 
-        input:focus + .slider {
-          box-shadow: 0 0 1px #00FF00;
-        }
+          input:focus + .slider {
+            box-shadow: 0 0 1px var(--link-active);
+          }
 
-        input:checked + .slider:before {
-          -webkit-transform: translateX(66px);
-          -ms-transform: translateX(66px);
-          transform: translateX(66px);
-        }
+          input:checked + .slider:before {
+            transform: translateX(26px);
+          }
 
-        .slider.round {
-          border-radius: 34px;
-        }
+          .slider.round {
+            border-radius: 34px;
+          }
 
-        .slider.round:before {
-          border-radius: 50%;
+          .slider.round:before {
+            border-radius: 50%;
+          }
         }
       }
 
@@ -140,19 +141,15 @@ body {
           display: flex;
           gap: 8px;
           align-items: center;
+          color: var(--text-color);
 
-          p {
-            font-family: system-ui, sans-serif;
-            font-size: 12px;
-          }
-
-          span {
-            font-family: system-ui, sans-serif;
-            font-size: 15px;
+          p, span {
+            font-size: 14px;
           }
         }
       }
     }
+
     .pause-block {
       margin-top: 15px;
       display: flex;
@@ -161,15 +158,18 @@ body {
       width: 100%;
       backdrop-filter: blur(10px);
       background-color: rgba(189, 189, 189, 0.3);
-      animation: changeWidth 8s ease-in-out infinite;
       padding: 5px;
       border-radius: 8px;
       gap: 8px;
       cursor: pointer;
-      transition: 0.4s;
 
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
+        background-color: var(--hover-color);
+
+        p {
+          color: var(--main-color);
+        }
       }
 
       .pause {
@@ -178,11 +178,10 @@ body {
       }
 
       p {
-        font-family: system-ui, sans-serif;
+        font-family: 'Anek Kannada', sans-serif;
         font-size: 16px;
-        color: gray;
+        color: var(--text-color);
       }
     }
   }
 }
-
