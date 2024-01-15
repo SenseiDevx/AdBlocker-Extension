@@ -10,6 +10,7 @@ const domain = document.querySelector('.domain');
 const cookies = document.querySelector('#cookies');
 const pauseButton = document.querySelector('.pause-block')
 const mainFunction = document.querySelector('.main_function')
+const protection = document.querySelector('.protection')
 
 let a = 0;
 
@@ -28,15 +29,17 @@ async function updateButtonState() {
     const isEnabled = await getRulesEnabledState();
     fetchDomain();
     if (!isEnabled) {
-        text.innerHTML = 'OFF';
-        document.querySelector('.text-content').style.color = 'red'
+        protection.innerHTML = 'Protection Enabled'
+        text.innerHTML = `<img class="minus-icon" src="../assets/minus-icon.png" alt="minus"/>`;
+        document.querySelector('.protection').style.color = "red"
         button.checked = false;
         chrome.action.setBadgeText({ text: '' });
         cookies.innerHTML = 0;
         if (a > 0) showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
     } else {
-        text.innerHTML = 'ON';
-        document.querySelector('.text-content').style.color = '#00FF00'
+        protection.innerHTML = 'Protection Disabled'
+        text.innerHTML = `<img class="shield" src="../assets/shield-green.png" alt="green"/>`;
+        document.querySelector('.protection').style.color = "#01dca2"
         button.checked = true;
         chrome.action.setBadgeText({ text: 'ON' });
         if (a > 0) showNotification('Ad Blocking Enabled', 'Ad blocking is enabled on this site.');

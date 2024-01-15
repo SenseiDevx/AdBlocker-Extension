@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="" />
+    <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/AdStopper/assets/minus-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdStopper/assets/shield-green.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdStopper/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/AdStopper/css/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdStopper/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/AdStopper/popup/popup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdStopper/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdStopper/popup/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdStopper/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AdStopper/scss/popup.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,11 +54,11 @@
       <recent name="D:\Users\User\Desktop\adblocker-extension\BlockEase" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\User\Desktop\adblocker-extension\AdStopper\assets" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\SilentSurfer\assets" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\SilentSurfer\assets\images" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\NoAdsNow\assets" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\NoAdsNow\assets\images" />
-      <recent name="D:\Users\User\Desktop\adblocker-extension\BlockEase\assets\images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -76,6 +84,7 @@
       <workItem from="1705159361549" duration="9238000" />
       <workItem from="1705214047663" duration="833000" />
       <workItem from="1705249674165" duration="2667000" />
+      <workItem from="1705323648390" duration="3821000" />
     </task>
     <servers />
   </component>

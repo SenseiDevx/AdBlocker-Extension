@@ -5,7 +5,7 @@
   --blue-color: #0093FE;
   --link-active: #099344;
   --popup-text-color: #0f5da9;
-  --background-color: #ffffff;
+  --background-color: #cfcfcf;
 }
 
 * {
@@ -13,6 +13,8 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 body {
@@ -35,6 +37,12 @@ body {
 .wrapper .inner {
   height: 100%;
 }
+.wrapper .inner h1 {
+  text-align: center;
+}
+.wrapper .inner h2 {
+  text-align: center;
+}
 .wrapper .inner .header-allow {
   width: 100%;
   display: -webkit-box;
@@ -46,13 +54,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 5px;
+}
+.wrapper .inner .header-allow .h4 {
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  color: var(--main-color);
 }
 .wrapper .inner .header-allow .domain {
-  text-align: center;
   font-family: system-ui, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   color: var(--blue-color);
-  text-decoration: underline;
   cursor: pointer;
 }
 .wrapper .inner .main_function {
@@ -118,11 +130,11 @@ body {
   transition: 0.4s;
 }
 .wrapper .inner .main_function .checkbox-wrapper-5 input:checked + .slider {
-  background-color: #00FF00;
+  background-color: #01dca2;
 }
 .wrapper .inner .main_function .checkbox-wrapper-5 input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px #00FF00;
-          box-shadow: 0 0 1px #00FF00;
+  -webkit-box-shadow: 0 0 1px #01dca2;
+          box-shadow: 0 0 1px #01dca2;
 }
 .wrapper .inner .main_function .checkbox-wrapper-5 input:checked + .slider:before {
   -webkit-transform: translateX(66px);
@@ -173,7 +185,7 @@ body {
   width: 100%;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  background-color: rgba(189, 189, 189, 0.3);
+  background-color: rgb(189, 189, 189);
   -webkit-animation: changeWidth 8s ease-in-out infinite;
           animation: changeWidth 8s ease-in-out infinite;
   padding: 5px;
@@ -195,4 +207,12 @@ body {
   font-family: system-ui, sans-serif;
   font-size: 16px;
   color: gray;
+}
+.wrapper .minus-icon {
+  width: 100px;
+  height: 100px;
+}
+.wrapper .shield {
+  width: 100px;
+  height: 100px;
 }
