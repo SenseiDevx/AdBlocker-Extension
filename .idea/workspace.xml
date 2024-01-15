@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdErase/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/AdErase/css/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdErase/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/AdErase/popup/popup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdErase/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AdErase/scss/popup.scss" afterDir="false" />
-    </list>
+    <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,7 +75,7 @@
       <workItem from="1705155858287" duration="2317000" />
       <workItem from="1705159361549" duration="9238000" />
       <workItem from="1705214047663" duration="833000" />
-      <workItem from="1705249674165" duration="1867000" />
+      <workItem from="1705249674165" duration="2667000" />
     </task>
     <servers />
   </component>

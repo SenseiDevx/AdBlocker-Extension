@@ -64,13 +64,6 @@ chrome.runtime.onInstalled.addListener(function (details) {
             title: 'Installation complete',
             message: 'The extension has been successfully installed!'
         });
-    } else if (details.reason === "update") {
-        chrome.notifications.create('updateNotification', {
-            type: 'basic',
-            iconUrl: "../assets/images/logo.png",
-            title: 'Update complete',
-            message: 'The extension has been successfully updated!'
-        });
     }
 });
 
