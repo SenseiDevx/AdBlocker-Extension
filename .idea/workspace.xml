@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlockEase/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/BlockEase/popup/popup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockEase/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/BlockEase/scss/popup.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +31,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Users/User/Desktop/adblocker-extension/AdErase/assets",
+    "last_opened_file_path": "D:/Users/User/Desktop/adblocker-extension/BlockEase/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -42,8 +42,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Users\User\Desktop\adblocker-extension\AdErase\assets" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\BlockEase\assets" />
+      <recent name="D:\Users\User\Desktop\adblocker-extension\AdErase\assets" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\NoAdsNow\assets" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\SilentSurfer" />
       <recent name="D:\Users\User\Desktop\adblocker-extension\NoAdsNow" />
@@ -79,7 +79,7 @@
       <workItem from="1705159361549" duration="9238000" />
       <workItem from="1705214047663" duration="833000" />
       <workItem from="1705249674165" duration="2667000" />
-      <workItem from="1705323648390" duration="7111000" />
+      <workItem from="1705323648390" duration="9363000" />
     </task>
     <servers />
   </component>
