@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AdErase/assets/de-minus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdErase/assets/shield-blue.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdErase/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/AdErase/css/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdErase/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/AdErase/popup/popup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdErase/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/AdErase/popup/popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdErase/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AdErase/scss/popup.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdStopper/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/AdStopper/css/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdStopper/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AdStopper/scss/popup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockEase/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/BlockEase/popup/popup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockEase/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/BlockEase/scss/popup.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +79,7 @@
       <workItem from="1705159361549" duration="9238000" />
       <workItem from="1705214047663" duration="833000" />
       <workItem from="1705249674165" duration="2667000" />
-      <workItem from="1705323648390" duration="6508000" />
+      <workItem from="1705323648390" duration="7111000" />
     </task>
     <servers />
   </component>
