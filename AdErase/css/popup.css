@@ -104,11 +104,11 @@ body {
 }
 .wrapper .inner .main_function .header-allow .h4 {
   font-family: system-ui, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
 }
 .wrapper .inner .main_function .header-allow .domain {
   font-family: system-ui, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: var(--main-color);
   cursor: pointer;
 }
@@ -127,6 +127,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 .wrapper .inner .main_function .checkbox-wrapper-5 .text-content {
   background-color: var(--text-color);

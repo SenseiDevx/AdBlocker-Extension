@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;600&display=swap');
 
 :root {
-  --main-color: #000027;
+  --main-color: #00D973;
   --text-color: #ffffff;
   --blue-color: #0093FE;
   --link-active: #099344;
   --popup-text-color: #0f5da9;
-  --background-color: rgb(43, 43, 43);
+  --background-color: #A6E6DB;
   --button-size: 25vw;
 }
 
@@ -30,13 +30,26 @@ body {
 .wrapper {
   width: 300px;
   height: max-content;
-  padding: 20px;
 
   .inner {
     height: 100%;
 
-    h1 {
-      text-align: center;
+    .header {
+      background-color: var(--main-color);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      h1 {
+        text-align: center;
+      }
+
+      .logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+      }
     }
 
     h2 {
@@ -228,6 +241,8 @@ body {
 
     .footer {
       padding-top: 20px;
+      background-color: var(--main-color);
+      padding: 20px;
 
       .text-content {
         text-align: center;
@@ -250,37 +265,6 @@ body {
           font-size: 15px;
         }
       }
-    }
-  }
-
-  .pause-block {
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    backdrop-filter: blur(10px);
-    background-color: rgba(189, 189, 189, 0.3);
-    animation: changeWidth 8s ease-in-out infinite;
-    padding: 5px;
-    border-radius: 8px;
-    gap: 8px;
-    cursor: pointer;
-    transition: 0.4s;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-
-    .pause {
-      width: 35px;
-      height: 35px;
-    }
-
-    p {
-      font-family: system-ui, sans-serif;
-      font-size: 16px;
-      color: gray;
     }
   }
 }

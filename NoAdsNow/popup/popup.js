@@ -29,8 +29,6 @@ async function updateButtonState() {
     fetchDomain();
     if (!isEnabled) {
         protection.innerHTML = 'Protection Disabled'
-        text.innerHTML = 'OFF'
-        document.querySelector('.text-content').style.color = 'red'
         document.querySelector('.protection').style.color = 'red'
         document.querySelector('.container').style.backgroundColor = 'red'
         button.checked = false;
@@ -39,8 +37,6 @@ async function updateButtonState() {
         if (a > 0) showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
     } else {
         protection.innerHTML = 'Protection Enabled'
-        text.innerHTML = 'ON'
-        document.querySelector('.text-content').style.color = '#01dca2'
         document.querySelector('.protection').style.color = '#01dca2'
         document.querySelector('.container').style.backgroundColor = '#01dca2'
         button.checked = true;

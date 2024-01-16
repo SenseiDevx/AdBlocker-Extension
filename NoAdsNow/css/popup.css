@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;600&display=swap");
 :root {
-  --main-color: #000027;
+  --main-color: #00D973;
   --text-color: #ffffff;
   --blue-color: #0093FE;
   --link-active: #099344;
   --popup-text-color: #0f5da9;
-  --background-color: rgb(43, 43, 43);
+  --background-color: #A6E6DB;
   --button-size: 25vw;
 }
 
@@ -33,13 +33,28 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 20px;
 }
 .wrapper .inner {
   height: 100%;
 }
-.wrapper .inner h1 {
+.wrapper .inner .header {
+  background-color: var(--main-color);
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.wrapper .inner .header h1 {
   text-align: center;
+}
+.wrapper .inner .header .logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
 }
 .wrapper .inner h2 {
   text-align: center;
@@ -328,6 +343,8 @@ body {
 }
 .wrapper .inner .footer {
   padding-top: 20px;
+  background-color: var(--main-color);
+  padding: 20px;
 }
 .wrapper .inner .footer .text-content {
   text-align: center;
@@ -350,41 +367,4 @@ body {
 .wrapper .inner .footer .cookies_count span {
   font-family: system-ui, sans-serif;
   font-size: 15px;
-}
-.wrapper .pause-block {
-  margin-top: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  background-color: rgba(189, 189, 189, 0.3);
-  -webkit-animation: changeWidth 8s ease-in-out infinite;
-          animation: changeWidth 8s ease-in-out infinite;
-  padding: 5px;
-  border-radius: 8px;
-  gap: 8px;
-  cursor: pointer;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.wrapper .pause-block:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-.wrapper .pause-block .pause {
-  width: 35px;
-  height: 35px;
-}
-.wrapper .pause-block p {
-  font-family: system-ui, sans-serif;
-  font-size: 16px;
-  color: gray;
 }

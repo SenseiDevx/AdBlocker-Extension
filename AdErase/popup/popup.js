@@ -29,18 +29,14 @@ async function updateButtonState() {
     fetchDomain();
     if (!isEnabled) {
         protection.innerHTML = 'Protection Disabled'
-        text.innerHTML = 'OFF'
         document.querySelector('.protection').style.color = "red"
-        document.querySelector('.text-content').style.color = '#ff0000'
         button.checked = false;
         chrome.action.setBadgeText({ text: '' });
         cookies.innerHTML = 0;
         if (a > 0) showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
     } else {
         protection.innerHTML = 'Protection Enabled'
-        text.innerHTML = 'ON'
         document.querySelector('.protection').style.color = '#008AA1'
-        document.querySelector('.text-content').style.color = '#008AA1'
         button.checked = true;
         chrome.action.setBadgeText({ text: 'ON' });
         if (a > 0) showNotification('Ad Blocking Enabled', 'Ad blocking is enabled on this site.');
