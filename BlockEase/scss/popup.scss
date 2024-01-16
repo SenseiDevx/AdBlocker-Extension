@@ -21,7 +21,7 @@ body {
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   background-color: var(--background-color);
-  color: var(--main-color);
+  color: var(--text-color);
   height: 100%;
   direction: ltr !important;
 }
@@ -52,7 +52,6 @@ body {
       .h4 {
         font-family: system-ui, sans-serif;
         font-size: 14px;
-        color: var(--main-color);
       }
 
       .domain {
@@ -264,7 +263,7 @@ body {
       justify-content: center;
       width: 100%;
       backdrop-filter: blur(10px);
-      background-color: rgba(189, 189, 189, 1);
+      background-color: rgba(189, 189, 189, 0.3);
       animation: changeWidth 8s ease-in-out infinite;
       padding: 5px;
       border-radius: 8px;
@@ -287,16 +286,6 @@ body {
         color: gray;
       }
     }
-  }
-
-  .minus-icon {
-    width: 100px;
-    height: 100px;
-  }
-
-  .shield {
-    width: 100px;
-    height: 100px;
   }
 }
 

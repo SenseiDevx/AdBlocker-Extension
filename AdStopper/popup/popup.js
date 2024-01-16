@@ -29,7 +29,7 @@ async function updateButtonState() {
     const isEnabled = await getRulesEnabledState();
     fetchDomain();
     if (!isEnabled) {
-        protection.innerHTML = 'Protection Enabled'
+        protection.innerHTML = 'Protection Disabled'
         text.innerHTML = `<img class="minus-icon" src="../assets/minus-icon.png" alt="minus"/>`;
         document.querySelector('.protection').style.color = "red"
         button.checked = false;
@@ -37,7 +37,7 @@ async function updateButtonState() {
         cookies.innerHTML = 0;
         if (a > 0) showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
     } else {
-        protection.innerHTML = 'Protection Disabled'
+        protection.innerHTML = 'Protection Enabled'
         text.innerHTML = `<img class="shield" src="../assets/shield-green.png" alt="green"/>`;
         document.querySelector('.protection').style.color = "#01dca2"
         button.checked = true;
