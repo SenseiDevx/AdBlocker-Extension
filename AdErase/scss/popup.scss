@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;600&display=swap');
 
 :root {
-  --main-color: #000027;
+  --main-color: #06004F;
   --text-color: #ffffff;
   --blue-color: #0093FE;
   --link-active: #099344;
   --popup-text-color: #0f5da9;
-  --background-color: #000027;
+  --background-color: #008AA1;
 }
 
 * {
@@ -27,38 +27,37 @@ body {
 }
 
 .wrapper {
-  width: 300px;
+  width: 350px;
   height: max-content;
-  padding: 20px;
 
   .inner {
     height: 100%;
 
-    h1 {
-      text-align: center;
-    }
-
-    h2 {
-      text-align: center;
-    }
-
-    .header-allow {
-      width: 100%;
+    .header {
+      background-color: var(--main-color);
       display: flex;
+      align-items: start;
       justify-content: center;
-      align-items: center;
-      gap: 5px;
+      padding: 20px;
+      gap: 10px;
 
-      .h4 {
-        font-family: system-ui, sans-serif;
-        font-size: 14px;
-      }
+      .left-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .image {
+          width: 80px;
+          height: 80px;
+          border-radius: 10px;
+        }
 
-      .domain {
-        font-family: system-ui, sans-serif;
-        font-size: 14px;
-        color: var(--blue-color);
-        cursor: pointer;
+        h1 {
+          text-align: center;
+          font-size: 22px;
+        }
+        h2 {
+          text-align: center;
+        }
       }
     }
 
@@ -68,12 +67,44 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      padding-top: 20px;
+
+      .header-allow {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        .h4 {
+          font-family: system-ui, sans-serif;
+          font-size: 16px;
+        }
+
+        .domain {
+          font-family: system-ui, sans-serif;
+          font-size: 16px;
+          color: var(--main-color);
+          cursor: pointer;
+        }
+      }
 
       .checkbox-wrapper-5 {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-bottom: 20px;
+
+        .text-content {
+          background-color: var(--text-color);
+          padding-right: 5px;
+          padding-left: 5px;
+          border-radius: 5px;
+          font-size: 20px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
 
         .switch {
           position: relative;
@@ -113,11 +144,11 @@ body {
         }
 
         input:checked + .slider {
-          background-color: var(--blue-color);
+          background-color: var(--main-color);
         }
 
         input:focus + .slider {
-          box-shadow: 0 0 1px var(--blue-color);
+          box-shadow: 0 0 1px var(--main-color);
         }
 
         input:checked + .slider:before {
@@ -136,18 +167,26 @@ body {
       }
 
       .footer {
-        padding-top: 20px;
+        background-color: var(--main-color);
 
         .text-content {
           text-align: center;
-          padding-bottom: 15px;
           font-size: 22px;
         }
 
         .cookies_count {
           display: flex;
+          justify-content: center;
           gap: 8px;
           align-items: center;
+          padding: 20px;
+
+          .cookie {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            justify-content: space-between;
+          }
 
           p {
             font-family: system-ui, sans-serif;
@@ -161,34 +200,37 @@ body {
         }
       }
     }
-    .pause-block {
-      margin-top: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      backdrop-filter: blur(10px);
-      background-color: rgba(189, 189, 189, 0.1);
-      animation: changeWidth 8s ease-in-out infinite;
-      padding: 5px;
-      border-radius: 8px;
-      gap: 8px;
-      cursor: pointer;
-      transition: 0.4s;
+    .pause-element {
+      background-color: var(--main-color);
+      .pause-block {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        background-color: rgba(189, 189, 189, 0.1);
+        animation: changeWidth 8s ease-in-out infinite;
+        border-radius: 8px;
+        gap: 8px;
+        cursor: pointer;
+        transition: 0.4s;
+        padding: 20px;
 
-      &:hover {
-        transform: scale(1.1);
-      }
+        &:hover {
+          transform: scale(1.1);
+        }
 
-      .pause {
-        width: 35px;
-        height: 35px;
-      }
+        .pause {
+          width: 35px;
+          height: 35px;
+        }
 
-      p {
-        font-family: system-ui, sans-serif;
-        font-size: 16px;
-        color: gray;
+        p {
+          font-family: system-ui, sans-serif;
+          font-size: 16px;
+          color: gray;
+        }
       }
     }
   }
