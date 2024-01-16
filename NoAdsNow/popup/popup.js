@@ -8,7 +8,6 @@ const button = document.getElementById('check');
 const text = document.querySelector('.text-content');
 const domain = document.querySelector('.domain');
 const cookies = document.querySelector('#cookies');
-const pauseButton = document.querySelector('.pause-block')
 const mainFunction = document.querySelector('.main_function')
 const protection = document.querySelector('.protection')
 
@@ -51,30 +50,6 @@ async function updateButtonState() {
     }
 }
 
-
-async function togglePauseResume() {
-    try {
-        if (pauseButton.textContent.includes('Pause AdBlock')) {
-            await disableRulesForCurrentPage();
-            chrome.storage.local.set({ adblockPaused: true });
-            mainFunction.style.display = 'none';
-            pauseButton.textContent = 'Resume AdBlocker';
-            pauseButton.innerHTML = '<img class="pause" src="../assets/play-button.svg" alt="pause-icon"> Resume AdBlock';
-        } else {
-            await enableRulesForCurrentPage();
-            chrome.storage.local.set({ adblockPaused: false });
-            mainFunction.style.display = 'block';
-            pauseButton.textContent = 'Pause AdBlock';
-            pauseButton.innerHTML = '<img class="pause" src="../assets/pause-button.svg" alt="pause-icon"> Pause AdBlock';
-        }
-        updateButtonState();
-    } catch (error) {
-        console.error('Ошибка при переключении Adblock:', error);
-    }
-}
-
-
-
 async function fetchDomain() {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
     if (tab?.url) {
@@ -114,24 +89,11 @@ function getCookiesCount() {
     });
 }
 
-
 function init() {
-    chrome.storage.local.get(['adblockPaused'], function(result) {
-        if (result.adblockPaused) {
-            mainFunction.style.display = 'none';
-            pauseButton.textContent = 'Resume AdBlocker';
-            pauseButton.innerHTML = '<img class="pause" src="../assets/play-button.svg" alt="pause-icon"> Resume AdBlock';
-        } else {
-            mainFunction.style.display = 'block';
-            pauseButton.textContent = 'Pause AdBlock';
-            pauseButton.innerHTML = '<img class="pause" src="../assets/pause-button.svg" alt="pause-icon"> Pause AdBlock';
-        }
-    });
-
+    // Removed pauseButton-related code
     button.addEventListener('click', toggleAdBlocking);
-    pauseButton.addEventListener('click', togglePauseResume);
     updateButtonState();
     getCookiesCount();
 }
 
-init()
+init();
