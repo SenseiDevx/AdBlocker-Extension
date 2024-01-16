@@ -30,7 +30,6 @@ async function updateButtonState() {
     fetchDomain();
     if (!isEnabled) {
         protection.innerHTML = 'Protection Enabled'
-        text.innerHTML = `<img class="minus-icon" src="../assets/minus-icon.png" alt="minus"/>`;
         document.querySelector('.protection').style.color = "red"
         button.checked = false;
         chrome.action.setBadgeText({ text: '' });
@@ -38,7 +37,6 @@ async function updateButtonState() {
         if (a > 0) showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
     } else {
         protection.innerHTML = 'Protection Disabled'
-        text.innerHTML = `<img class="shield" src="../assets/shield-green.png" alt="green"/>`;
         document.querySelector('.protection').style.color = "#01dca2"
         button.checked = true;
         chrome.action.setBadgeText({ text: 'ON' });
