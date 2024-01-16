@@ -4,12 +4,13 @@ import {
     disableRulesForCurrentPage,
 } from '../scripts/background.js';
 
-const button = document.getElementById('checkbox');
+const button = document.getElementById('check');
 const text = document.querySelector('.text-content');
 const domain = document.querySelector('.domain');
 const cookies = document.querySelector('#cookies');
 const pauseButton = document.querySelector('.pause-block')
 const mainFunction = document.querySelector('.main_function')
+const protection = document.querySelector('.protection')
 
 let a = 0;
 
@@ -28,17 +29,21 @@ async function updateButtonState() {
     const isEnabled = await getRulesEnabledState();
     fetchDomain();
     if (!isEnabled) {
-        text.innerHTML = 'OFF';
+        protection.innerHTML = 'Protection Disabled'
+        text.innerHTML = 'OFF'
         document.querySelector('.text-content').style.color = 'red'
-        document.querySelector('body').style.backgroundColor = '#9d0000'
+        document.querySelector('.protection').style.color = 'red'
+        document.querySelector('.container').style.backgroundColor = 'red'
         button.checked = false;
         chrome.action.setBadgeText({ text: '' });
         cookies.innerHTML = 0;
         if (a > 0) showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
     } else {
-        text.innerHTML = 'ON';
-        document.querySelector('.text-content').style.color = '#00FF00'
-        document.querySelector('body').style.backgroundColor = '#d3d3d3'
+        protection.innerHTML = 'Protection Enabled'
+        text.innerHTML = 'ON'
+        document.querySelector('.text-content').style.color = '#01dca2'
+        document.querySelector('.protection').style.color = '#01dca2'
+        document.querySelector('.container').style.backgroundColor = '#01dca2'
         button.checked = true;
         chrome.action.setBadgeText({ text: 'ON' });
         if (a > 0) showNotification('Ad Blocking Enabled', 'Ad blocking is enabled on this site.');
