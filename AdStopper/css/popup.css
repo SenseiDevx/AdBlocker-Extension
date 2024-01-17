@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;600&display=swap");
 :root {
-  --main-color: #0D2B52;
+  --main-color: #6E66D4;
   --text-color: #ffffff;
   --blue-color: #0093FE;
   --link-active: #099344;
   --popup-text-color: #0f5da9;
-  --background-color: #4F8FE6;
+  --background-color: #cec7f1;
 }
 
 * {
@@ -78,6 +78,7 @@ body {
 }
 .wrapper .inner .header-allow .h4 {
   font-size: 16px;
+  color: var(--main-color);
 }
 .wrapper .inner .header-allow .domain {
   font-size: 16px;
@@ -131,7 +132,7 @@ body {
   width: var(--width);
   height: var(--height);
   background-color: var(--main-color);
-  border-radius: 20px;
+  border-radius: 50%;
 }
 .wrapper .inner .main_function .power-button-switch .power-switch .button {
   width: 100%;
@@ -351,6 +352,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 8px;
   -webkit-box-align: center;
       -ms-flex-align: center;
