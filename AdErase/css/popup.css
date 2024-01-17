@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;600&display=swap");
 :root {
-  --main-color: #06004F;
+  --main-color: #0D75FF;
   --text-color: #ffffff;
   --blue-color: #0093FE;
   --link-active: #099344;
   --popup-text-color: #0f5da9;
-  --background-color: #008AA1;
+  --background-color: #ABF5ED;
 }
 
 * {
@@ -41,38 +41,27 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px;
   gap: 10px;
 }
-.wrapper .inner .header .left-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.wrapper .inner .header .left-block .image {
+.wrapper .inner .header .image {
   width: 80px;
   height: 80px;
   border-radius: 10px;
 }
-.wrapper .inner .header .left-block h1 {
+.wrapper .inner .header .text-block h1 {
   text-align: center;
   font-size: 22px;
 }
-.wrapper .inner .header .left-block h2 {
+.wrapper .inner .header .text-block .protection {
   text-align: center;
+  font-size: 16px;
 }
 .wrapper .inner .main_function {
   width: 100%;
@@ -105,6 +94,7 @@ body {
 .wrapper .inner .main_function .header-allow .h4 {
   font-family: system-ui, sans-serif;
   font-size: 16px;
+  color: var(--main-color);
 }
 .wrapper .inner .main_function .header-allow .domain {
   font-family: system-ui, sans-serif;
@@ -144,6 +134,9 @@ body {
           align-items: center;
   width: var(--width);
   height: var(--height);
+  border-radius: 10px;
+  background-color: var(--main-color);
+  margin-top: 15px;
 }
 .wrapper .inner .main_function .power-button-switch .power-switch .button {
   width: 100%;
