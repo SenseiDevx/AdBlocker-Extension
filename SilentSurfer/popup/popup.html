@@ -9,36 +9,50 @@
 <body>
 <div class="wrapper">
     <div class="inner">
-        <h1>SilentSurfer</h1>
-        <h2 class="protection"></h2>
+        <div class="header">
+            <img class="logo" src="../assets/images/logo.png" alt="logo">
+            <div>
+                <h1>BlockEase</h1>
+                <h2 class="protection"></h2>
+            </div>
+        </div>
+        <header class="header-allow">
+            <h4 class="h4">Active Page:</h4>
+            <p class="domain"></p>
+        </header>
         <div class="main_function">
             <div class="power-button-switch">
-                <div class="container">
-                    <input type="checkbox" id="check" class="check">
-                    <label for="check">
-                        <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xLink" class="fixed-svg">
-                            <circle class="inner-circle" cx="35%" cy="35%" r="35%"></circle>
+                <div class="power-switch">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="button">
+                        <svg class="power-off">
+                            <use xlink:href="#line" class="line" />
+                            <use xlink:href="#circle" class="circle" />
                         </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xLink" class="rotate-svg">
-                            <circle class="outer-circle" cx="35%" cy="35%" r="35%"></circle>
+                        <svg class="power-on">
+                            <use xlink:href="#line" class="line" />
+                            <use xlink:href="#circle" class="circle" />
                         </svg>
-                        <div class="rect"></div>
-                    </label>
+                    </div>
                 </div>
+
+                <!-- SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
+                        <line x1="75" y1="34" x2="75" y2="58"/>
+                    </symbol>
+                    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
+                        <circle cx="75" cy="80" r="35"/>
+                    </symbol>
+                </svg>
             </div>
             <section class="footer">
-                <p class="text-content"></p>
                 <div class="cookies_count">
                     <p>Number of cookies on the browser</p>
                     <span id="cookies"></span>
                 </div>
             </section>
         </div>
-        <header class="header-allow">
-            <h4 class="h4">Active Page:</h4>
-            <p class="domain"></p>
-        </header>
-        <div class="pause-block"></div>
     </div>
 </div>
 </body>

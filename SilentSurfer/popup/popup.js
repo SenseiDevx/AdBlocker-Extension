@@ -4,11 +4,9 @@ import {
     disableRulesForCurrentPage,
 } from '../scripts/background.js';
 
-const button = document.getElementById('check');
-const text = document.querySelector('.text-content');
+const button = document.getElementById('checkbox');
 const domain = document.querySelector('.domain');
 const cookies = document.querySelector('#cookies');
-const pauseButton = document.querySelector('.pause-block')
 const mainFunction = document.querySelector('.main_function')
 const protection = document.querySelector('.protection')
 
@@ -29,51 +27,19 @@ async function updateButtonState() {
     const isEnabled = await getRulesEnabledState();
     fetchDomain();
     if (!isEnabled) {
-        protection.innerHTML = 'You are not protected'
-        text.innerHTML = 'OFF'
-        document.querySelector('body').style.backgroundColor = '#a341ff'
-        document.querySelector('.container').style.backgroundColor = '#009dff'
-        document.querySelector('.text-content').style.color = 'red'
+        protection.innerHTML = 'Protection Disabled'
         button.checked = false;
         chrome.action.setBadgeText({ text: '' });
         cookies.innerHTML = 0;
         if (a > 0) showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
     } else {
-        protection.innerHTML = 'You are protected'
-        text.innerHTML = 'ON'
-        document.querySelector('body').style.backgroundColor = 'rgb(49, 48, 48)'
-        document.querySelector('.container').style.backgroundColor = '#009dff'
-        document.querySelector('.text-content').style.color = '#01dca2'
+        protection.innerHTML = 'Protection Enabled'
         button.checked = true;
         chrome.action.setBadgeText({ text: 'ON' });
         if (a > 0) showNotification('Ad Blocking Enabled', 'Ad blocking is enabled on this site.');
         setAlarmForNotification();
     }
 }
-
-
-async function togglePauseResume() {
-    try {
-        if (pauseButton.textContent.includes('Pause AdBlock')) {
-            await disableRulesForCurrentPage();
-            chrome.storage.local.set({ adblockPaused: true });
-            mainFunction.style.display = 'none';
-            pauseButton.textContent = 'Resume AdBlocker';
-            pauseButton.innerHTML = '<img class="pause" src="../assets/play-button.svg" alt="pause-icon"> Resume AdBlock';
-        } else {
-            await enableRulesForCurrentPage();
-            chrome.storage.local.set({ adblockPaused: false });
-            mainFunction.style.display = 'block';
-            pauseButton.textContent = 'Pause AdBlock';
-            pauseButton.innerHTML = '<img class="pause" src="../assets/pause-button.svg" alt="pause-icon"> Pause AdBlock';
-        }
-        updateButtonState();
-    } catch (error) {
-        console.error('Ошибка при переключении Adblock:', error);
-    }
-}
-
-
 
 async function fetchDomain() {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
@@ -114,22 +80,16 @@ function getCookiesCount() {
     });
 }
 
-
 function init() {
     chrome.storage.local.get(['adblockPaused'], function(result) {
         if (result.adblockPaused) {
             mainFunction.style.display = 'none';
-            pauseButton.textContent = 'Resume AdBlocker';
-            pauseButton.innerHTML = '<img class="pause" src="../assets/play-button.svg" alt="pause-icon"> Resume AdBlock';
         } else {
             mainFunction.style.display = 'block';
-            pauseButton.textContent = 'Pause AdBlock';
-            pauseButton.innerHTML = '<img class="pause" src="../assets/pause-button.svg" alt="pause-icon"> Pause AdBlock';
         }
     });
 
     button.addEventListener('click', toggleAdBlocking);
-    pauseButton.addEventListener('click', togglePauseResume);
     updateButtonState();
     getCookiesCount();
 }

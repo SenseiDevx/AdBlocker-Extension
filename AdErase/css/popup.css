@@ -28,7 +28,7 @@ body {
 }
 
 .wrapper {
-  width: 350px;
+  width: 320px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -104,18 +104,21 @@ body {
 }
 .wrapper .inner .main_function .header-allow .h4 {
   font-family: system-ui, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 .wrapper .inner .main_function .header-allow .domain {
   font-family: system-ui, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--main-color);
   cursor: pointer;
 }
-.wrapper .inner .main_function .checkbox-wrapper-5 {
+.wrapper .inner .main_function .power-button-switch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -123,79 +126,238 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 25px;
+}
+.wrapper .inner .main_function .power-button-switch .power-switch {
+  --color-invert: #ffffff;
+  --width: 150px;
+  --height: 150px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: var(--width);
+  height: var(--height);
 }
-.wrapper .inner .main_function .checkbox-wrapper-5 .text-content {
-  background-color: var(--text-color);
-  padding-right: 5px;
-  padding-left: 5px;
-  border-radius: 5px;
-  font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.wrapper .inner .main_function .checkbox-wrapper-5 .switch {
+.wrapper .inner .main_function .power-button-switch .power-switch .button {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
-  display: inline-block;
-  width: 120px;
-  height: 54px;
 }
-.wrapper .inner .main_function .checkbox-wrapper-5 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-.wrapper .inner .main_function .checkbox-wrapper-5 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: red;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.wrapper .inner .main_function .checkbox-wrapper-5 .slider:before {
-  position: absolute;
+.wrapper .inner .main_function .power-button-switch .power-switch .button:after {
   content: "";
-  height: 46px;
-  width: 46px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: radial-gradient(circle closest-side, var(--color-invert), transparent);
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  opacity: 0;
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
-.wrapper .inner .main_function .checkbox-wrapper-5 input:checked + .slider {
+.wrapper .inner .main_function .power-button-switch .power-switch .button .power-on,
+.wrapper .inner .main_function .power-button-switch .power-switch .button .power-off {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  fill: none;
+  stroke: var(--color-invert);
+  stroke-width: 8px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.wrapper .inner .main_function .power-button-switch .power-switch .button .power-on .line,
+.wrapper .inner .main_function .power-button-switch .power-switch .button .power-off .line {
+  opacity: 0.2;
+}
+.wrapper .inner .main_function .power-button-switch .power-switch .button .power-on .circle,
+.wrapper .inner .main_function .power-button-switch .power-switch .button .power-off .circle {
+  opacity: 0.2;
+  -webkit-transform: rotate(-58deg);
+          transform: rotate(-58deg);
+  -webkit-transform-origin: center 80px;
+          transform-origin: center 80px;
+  stroke-dasharray: 220;
+  stroke-dashoffset: 40;
+}
+.wrapper .inner .main_function .power-button-switch .power-switch .button .power-on {
+  -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.8));
+          filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.8));
+}
+.wrapper .inner .main_function .power-button-switch .power-switch .button .power-on .line {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease 1s;
+  transition: opacity 0.3s ease 1s;
+}
+.wrapper .inner .main_function .power-button-switch .power-switch .button .power-on .circle {
+  opacity: 1;
+  stroke-dashoffset: 220;
+  -webkit-transition: stroke-dashoffset 1s ease 0s, -webkit-transform 0s ease;
+  transition: stroke-dashoffset 1s ease 0s, -webkit-transform 0s ease;
+  transition: transform 0s ease, stroke-dashoffset 1s ease 0s;
+  transition: transform 0s ease, stroke-dashoffset 1s ease 0s, -webkit-transform 0s ease;
+}
+.wrapper .inner .main_function .power-button-switch .power-switch input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0;
+}
+.wrapper .inner .main_function .power-button-switch .power-switch input:checked + .button:after {
+  opacity: 0.15;
+  -webkit-transform: scale(2) perspective(1px) translateZ(0);
+          transform: scale(2) perspective(1px) translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+.wrapper .inner .main_function .power-button-switch .power-switch input:checked + .button .power-on,
+.wrapper .inner .main_function .power-button-switch .power-switch input:checked + .button .power-off {
+  -webkit-animation: click-animation 0.3s ease forwards;
+          animation: click-animation 0.3s ease forwards;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.wrapper .inner .main_function .power-button-switch .power-switch input:checked + .button .power-on .line,
+.wrapper .inner .main_function .power-button-switch .power-switch input:checked + .button .power-off .line {
+  -webkit-animation: line-animation 0.8s ease-in forwards;
+          animation: line-animation 0.8s ease-in forwards;
+}
+.wrapper .inner .main_function .power-button-switch .power-switch input:checked + .button .power-on .circle,
+.wrapper .inner .main_function .power-button-switch .power-switch input:checked + .button .power-off .circle {
+  -webkit-transform: rotate(302deg);
+          transform: rotate(302deg);
+}
+.wrapper .inner .main_function .power-button-switch .power-switch input:checked + .button .power-on .line {
+  opacity: 1;
+  -webkit-transition: opacity 0.05s ease-in 0.55s;
+  transition: opacity 0.05s ease-in 0.55s;
+}
+.wrapper .inner .main_function .power-button-switch .power-switch input:checked + .button .power-on .circle {
+  -webkit-transform: rotate(302deg);
+          transform: rotate(302deg);
+  stroke-dashoffset: 40;
+  -webkit-transition: stroke-dashoffset 0.4s ease 0.2s, -webkit-transform 0.4s ease 0.2s;
+  transition: stroke-dashoffset 0.4s ease 0.2s, -webkit-transform 0.4s ease 0.2s;
+  transition: transform 0.4s ease 0.2s, stroke-dashoffset 0.4s ease 0.2s;
+  transition: transform 0.4s ease 0.2s, stroke-dashoffset 0.4s ease 0.2s, -webkit-transform 0.4s ease 0.2s;
+}
+@-webkit-keyframes line-animation {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  40% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+  60% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+  85% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes line-animation {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  40% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+  60% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+  85% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@-webkit-keyframes click-animation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes click-animation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.wrapper .inner .footer {
   background-color: var(--main-color);
 }
-.wrapper .inner .main_function .checkbox-wrapper-5 input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px var(--main-color);
-          box-shadow: 0 0 1px var(--main-color);
-}
-.wrapper .inner .main_function .checkbox-wrapper-5 input:checked + .slider:before {
-  -webkit-transform: translateX(66px);
-  transform: translateX(66px);
-}
-.wrapper .inner .main_function .checkbox-wrapper-5 .slider.round {
-  border-radius: 34px;
-}
-.wrapper .inner .main_function .checkbox-wrapper-5 .slider.round:before {
-  border-radius: 50%;
-}
-.wrapper .inner .main_function .footer {
-  background-color: var(--main-color);
-}
-.wrapper .inner .main_function .footer .text-content {
+.wrapper .inner .footer .text-content {
   text-align: center;
   font-size: 22px;
 }
-.wrapper .inner .main_function .footer .cookies_count {
+.wrapper .inner .footer .cookies_count {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,7 +370,7 @@ body {
           align-items: center;
   padding: 20px;
 }
-.wrapper .inner .main_function .footer .cookies_count .cookie {
+.wrapper .inner .footer .cookies_count .cookie {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,18 +382,18 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.wrapper .inner .main_function .footer .cookies_count p {
+.wrapper .inner .footer .cookies_count p {
   font-family: system-ui, sans-serif;
   font-size: 15px;
 }
-.wrapper .inner .main_function .footer .cookies_count span {
+.wrapper .inner .footer .cookies_count span {
   font-family: system-ui, sans-serif;
   font-size: 15px;
 }
-.wrapper .inner .pause-element {
+.wrapper .pause-element {
   background-color: var(--main-color);
 }
-.wrapper .inner .pause-element .pause-block {
+.wrapper .pause-element .pause-block {
   margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,24 +417,16 @@ body {
   transition: 0.4s;
   padding: 20px;
 }
-.wrapper .inner .pause-element .pause-block:hover {
+.wrapper .pause-element .pause-block:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-.wrapper .inner .pause-element .pause-block .pause {
+.wrapper .pause-element .pause-block .pause {
   width: 35px;
   height: 35px;
 }
-.wrapper .inner .pause-element .pause-block p {
+.wrapper .pause-element .pause-block p {
   font-family: system-ui, sans-serif;
   font-size: 16px;
   color: gray;
-}
-.wrapper .minus-icon {
-  width: 120px;
-  height: 120px;
-}
-.wrapper .shield {
-  width: 120px;
-  height: 120px;
 }

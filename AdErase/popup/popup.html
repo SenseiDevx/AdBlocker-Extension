@@ -18,14 +18,33 @@
         </div>
         <div class="main_function">
             <header class="header-allow">
-                <h4 class="h4">Active Page:</h4>
+                <h4 class="h4">Domain:</h4>
                 <p class="domain"></p>
             </header>
-            <div class="checkbox-wrapper-5">
-                <label class="switch">
-                    <input id="checkbox" type="checkbox" checked>
-                    <span class="slider round"></span>
-                </label>
+            <div class="power-button-switch">
+                <div class="power-switch">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="button">
+                        <svg class="power-off">
+                            <use xlink:href="#line" class="line" />
+                            <use xlink:href="#circle" class="circle" />
+                        </svg>
+                        <svg class="power-on">
+                            <use xlink:href="#line" class="line" />
+                            <use xlink:href="#circle" class="circle" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
+                        <line x1="75" y1="34" x2="75" y2="58"/>
+                    </symbol>
+                    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
+                        <circle cx="75" cy="80" r="35"/>
+                    </symbol>
+                </svg>
             </div>
             <section class="footer">
                 <div class="cookies_count">

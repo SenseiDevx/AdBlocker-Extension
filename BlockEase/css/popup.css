@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;600&display=swap");
 :root {
-  --main-color: #000027;
+  --main-color: #2DBC94;
   --text-color: #ffffff;
   --blue-color: #0093FE;
   --link-active: #099344;
   --popup-text-color: #0f5da9;
-  --background-color: #1B1A23;
+  --background-color: #B5FFC2;
 }
 
 * {
@@ -32,19 +32,37 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 20px;
 }
 .wrapper .inner {
   height: 100%;
 }
-.wrapper .inner h1 {
+.wrapper .inner .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  background-color: var(--main-color);
+  padding: 20px;
+}
+.wrapper .inner .header .logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+}
+.wrapper .inner .header h1 {
   text-align: center;
 }
-.wrapper .inner h2 {
+.wrapper .inner .header h2 {
   text-align: center;
+  color: var(--text-color);
 }
 .wrapper .inner .header-allow {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,16 +72,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  gap: 10px;
 }
 .wrapper .inner .header-allow .h4 {
-  font-family: system-ui, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  color: var(--main-color);
 }
 .wrapper .inner .header-allow .domain {
-  font-family: system-ui, sans-serif;
-  font-size: 14px;
-  color: var(--blue-color);
+  font-size: 16px;
+  color: var(--main-color);
   cursor: pointer;
 }
 .wrapper .inner .main_function {
@@ -87,9 +106,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
 }
 .wrapper .inner .main_function .power-button-switch .power-switch {
-  --color-invert: #ffffff;
+  --color-invert: #79ffd9;
   --width: 150px;
   --height: 150px;
   position: relative;
@@ -104,6 +131,8 @@ body {
           align-items: center;
   width: var(--width);
   height: var(--height);
+  border-radius: 20px;
+  background-color: var(--main-color);
 }
 .wrapper .inner .main_function .power-button-switch .power-switch .button {
   width: 100%;
@@ -164,8 +193,8 @@ body {
   stroke-dashoffset: 40;
 }
 .wrapper .inner .main_function .power-button-switch .power-switch .button .power-on {
-  -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.8));
-          filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.8));
+  -webkit-filter: drop-shadow(0px 0px 6px rgb(0, 243, 151));
+          filter: drop-shadow(0px 0px 6px rgb(0, 243, 151));
 }
 .wrapper .inner .main_function .power-button-switch .power-switch .button .power-on .line {
   opacity: 0;
@@ -311,7 +340,8 @@ body {
   }
 }
 .wrapper .inner .main_function .footer {
-  padding-top: 20px;
+  padding: 20px;
+  background-color: var(--main-color);
 }
 .wrapper .inner .main_function .footer .text-content {
   text-align: center;
@@ -334,41 +364,4 @@ body {
 .wrapper .inner .main_function .footer .cookies_count span {
   font-family: system-ui, sans-serif;
   font-size: 15px;
-}
-.wrapper .inner .pause-block {
-  margin-top: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  background-color: rgba(189, 189, 189, 0.3);
-  -webkit-animation: changeWidth 8s ease-in-out infinite;
-          animation: changeWidth 8s ease-in-out infinite;
-  padding: 5px;
-  border-radius: 8px;
-  gap: 8px;
-  cursor: pointer;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.wrapper .inner .pause-block:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-.wrapper .inner .pause-block .pause {
-  width: 35px;
-  height: 35px;
-}
-.wrapper .inner .pause-block p {
-  font-family: system-ui, sans-serif;
-  font-size: 16px;
-  color: gray;
 }
