@@ -8,7 +8,6 @@ const button = document.getElementById('check');
 const text = document.querySelector('.text-content');
 const domain = document.querySelector('.domain');
 const cookies = document.querySelector('#cookies');
-const mainFunction = document.querySelector('.main_function')
 const protection = document.querySelector('.protection')
 
 let a = 0;
@@ -29,16 +28,12 @@ async function updateButtonState() {
     fetchDomain();
     if (!isEnabled) {
         protection.innerHTML = 'Protection Disabled'
-        document.querySelector('.protection').style.color = 'red'
-        document.querySelector('.container').style.backgroundColor = 'red'
         button.checked = false;
         chrome.action.setBadgeText({ text: '' });
         cookies.innerHTML = 0;
         if (a > 0) showNotification('Ad Blocking Disabled', 'Ad blocking is now disabled for this site.');
     } else {
         protection.innerHTML = 'Protection Enabled'
-        document.querySelector('.protection').style.color = '#01dca2'
-        document.querySelector('.container').style.backgroundColor = '#01dca2'
         button.checked = true;
         chrome.action.setBadgeText({ text: 'ON' });
         if (a > 0) showNotification('Ad Blocking Enabled', 'Ad blocking is enabled on this site.');

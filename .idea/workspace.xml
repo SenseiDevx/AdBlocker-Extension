@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/NoAdsNow/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/NoAdsNow/css/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoAdsNow/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/NoAdsNow/popup/popup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoAdsNow/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/NoAdsNow/popup/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoAdsNow/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/NoAdsNow/scss/popup.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2akYrJteRwqJj2HRsRunG8kzoGL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/User/Desktop/adblocker-extension/BlockEase/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\User\Desktop\adblocker-extension\BlockEase\assets" />
+      <recent name="D:\Users\User\Desktop\adblocker-extension\AdErase\assets" />
+      <recent name="D:\Users\User\Desktop\adblocker-extension\NoAdsNow\assets" />
+      <recent name="D:\Users\User\Desktop\adblocker-extension\SilentSurfer" />
+      <recent name="D:\Users\User\Desktop\adblocker-extension\NoAdsNow" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\User\Desktop\adblocker-extension\NoAdsNow\assets\images" />
+      <recent name="D:\Users\User\Desktop\adblocker-extension\AdErase\assets\images" />
+      <recent name="D:\Users\User\Desktop\adblocker-extension\AdErase\assets" />
+      <recent name="D:\Users\User\Desktop\adblocker-extension\AdStopper\assets" />
+      <recent name="D:\Users\User\Desktop\adblocker-extension\SilentSurfer\assets" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="" />
+      <created>1704864244706</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704864244706</updated>
+      <workItem from="1704864247928" duration="1329000" />
+      <workItem from="1704897049671" duration="602000" />
+      <workItem from="1704901740672" duration="5618000" />
+      <workItem from="1704950774990" duration="2732000" />
+      <workItem from="1704954329352" duration="739000" />
+      <workItem from="1704955247377" duration="4113000" />
+      <workItem from="1704965304834" duration="8470000" />
+      <workItem from="1705037348367" duration="3091000" />
+      <workItem from="1705071597916" duration="1681000" />
+      <workItem from="1705073438244" duration="4093000" />
+      <workItem from="1705146568681" duration="66000" />
+      <workItem from="1705155858287" duration="2317000" />
+      <workItem from="1705159361549" duration="9238000" />
+      <workItem from="1705214047663" duration="833000" />
+      <workItem from="1705249674165" duration="2667000" />
+      <workItem from="1705323648390" duration="10770000" />
+      <workItem from="1705410528622" duration="14349000" />
+      <workItem from="1705480539202" duration="3643000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
