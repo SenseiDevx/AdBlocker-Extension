@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@500;600&display=swap');
 
 :root {
-  --main-color: #2DBC94;
+  --main-color: #A90636;
   --text-color: #ffffff;
   --blue-color: #0093FE;
   --link-active: #099344;
   --popup-text-color: #0f5da9;
-  --background-color: #B5FFC2;
+  --background-color: #B08699;
 }
 
 * {
@@ -66,11 +66,9 @@ body {
       gap: 10px;
       .h4 {
         font-size: 16px;
-        color: var(--main-color);
       }
       .domain {
         font-size: 16px;
-        color: var(--main-color);
         cursor: pointer;
       }
     }
@@ -91,7 +89,7 @@ body {
         margin-bottom: 25px;
 
         .power-switch {
-          --color-invert: #79ffd9;
+          --color-invert: #fcfcfc;
           --width: 150px;
           --height: 150px;
           position: relative;
@@ -100,7 +98,7 @@ body {
           align-items: center;
           width: var(--width);
           height: var(--height);
-          border-radius: 20px;
+          border-radius: 50%;
           background-color: var(--main-color);
 
           .button {

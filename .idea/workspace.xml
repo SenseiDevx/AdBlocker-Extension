@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc395701-1e03-4cab-900f-8c63f32c31fa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdErase/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/AdErase/css/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdErase/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/AdErase/popup/popup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdErase/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AdErase/scss/popup.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockEase/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlockEase/css/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockEase/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/BlockEase/popup/popup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockEase/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/BlockEase/popup/popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockEase/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/BlockEase/scss/popup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SilentSurfer/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/SilentSurfer/css/popup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SilentSurfer/popup/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/SilentSurfer/popup/popup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SilentSurfer/popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/SilentSurfer/popup/popup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SilentSurfer/scss/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/SilentSurfer/scss/popup.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +83,7 @@
       <workItem from="1705323648390" duration="10770000" />
       <workItem from="1705410528622" duration="14349000" />
       <workItem from="1705480539202" duration="3643000" />
-      <workItem from="1705503444948" duration="8334000" />
+      <workItem from="1705503444948" duration="8660000" />
     </task>
     <servers />
   </component>
