@@ -8,7 +8,6 @@
         "tabs",
         "notifications",
         "alarms",
-        "storage",
         "cookies"
     ],
     "host_permissions": [
@@ -18,16 +17,6 @@
         "service_worker": "scripts/background.js",
         "type": "module"
     },
-    "content_scripts": [
-        {
-            "js": [
-                "scripts/content.js"
-            ],
-            "matches": [
-                "<all_urls>"
-            ]
-        }
-    ],
     "action": {
         "default_title": "SilentSurfer",
         "default_popup": "popup/popup.html",
